@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap');
+
+:root{
+  --purple: #454559;
+  --pink: #F27798;
+  --black: #0D0D0D;
+  --lighter-grey: #F5F3ED;
+  --grey: #E5E5E5;
+  --darker-grey: #C4C4C4;
+}
+
+html, body{
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3{
+  font-family: 'Noto Sans JP', sans-serif;
+}
