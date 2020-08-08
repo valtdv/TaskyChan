@@ -1,5 +1,6 @@
 # Tasky-chan!
 Meet Tasky-chan! your adorable kohai who will help put your agenda in order
+
 ## Starting 🚀
 Some instructions
 
@@ -10,7 +11,7 @@ Some instructions
 * [React.js](https://reactjs.org/) 
 
 ## Wiki 📖
-Text
+* [Visit our wiki to learn to use every aspect of Tasky!](https://github.com/valtdv/TaskyChan/wiki)
 
 ## Authors ✒️
 * **Valeria Osorio Salcedo** - *Frontend developer* - [valtdv](https://github.com/valtdv)
