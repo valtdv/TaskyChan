@@ -5,8 +5,8 @@
   --pink: #F27798;
   --black: #0D0D0D;
   --lighter-grey: #F5F3ED;
-  --grey: #E5E5E5;
-  --darker-grey: #C4C4C4;
+  --grey: #cccbcb;
+  --darker-grey: #8b8a8a;
 }
 
 html, body{
@@ -14,6 +14,22 @@ html, body{
   margin: 0%;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--darker-grey) var(--grey);
+}
+body::-webkit-scrollbar-track {
+  background: var(--grey);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--grey);
+  border-radius: 6px;
+  border: 3px solid var(--darker-grey);
 }
 
 h1, h2, h3{

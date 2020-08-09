@@ -1,1 +1,27 @@
 @import url("../../App.css");
+
+.Task {
+  width: 400px;
+  min-height: 50px;
+  color: var(--lighter-grey);
+  background-color: var(--purple);
+  border-radius: 15px;
+  text-align: left;
+  padding: 0px 10px;
+}
+
+.bottom-task {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.bottom-task p{
+  word-wrap: break-word;
+  margin: 10px;
+}
+
+.Task h2 {
+  padding-top: 10px;
+  margin-bottom: 0px;
+  font-size: 17px;
+}

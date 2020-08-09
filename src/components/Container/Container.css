@@ -1,0 +1,27 @@
+@import url("../../App.css");
+
+.Container {
+  width: 450px;
+  height: 550px;
+  margin-left: 100px;
+  overflow: auto;
+  border-radius: 15px;
+  background-color: var(--grey);
+  padding: 15px 35px;
+}
+
+.Container::-webkit-scrollbar {
+  width: 11px;
+}
+.Container {
+  scrollbar-width: thin;
+  scrollbar-color: var(--darker-grey) var(--grey);
+}
+.Container::-webkit-scrollbar-track {
+  background: var(--grey);
+}
+.Container::-webkit-scrollbar-thumb {
+  background-color: var(--grey);
+  border-radius: 6px;
+  border: 3px solid var(--darker-grey);
+}
