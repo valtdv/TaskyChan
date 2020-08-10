@@ -16,5 +16,5 @@ Some instructions
 ## Authors ✒️
 * **Valeria Osorio Salcedo** - *Frontend developer* - [valtdv](https://github.com/valtdv)
 * **Victor Manuel Barbosa Gutierrez** - *Backend developer* - [Victormbarbosa](https://github.com/Victormbarbosa)
-* **Victor Daniel Guevara Hernandez** - *Initial creator of this idea* - [dan3143](https://github.com/dan3143)
-* **Sebatian Molano Artuz** - *Initial creator of this idea* - [zebastain](https://github.com/zebastain)
+* **Victor Daniel Guevara Hernandez** - *Intellectual creator of this idea* - [dan3143](https://github.com/dan3143)
+* **Sebatian Molano Artuz** - *Intellectual creator of this idea* - [zebastain](https://github.com/zebastain)

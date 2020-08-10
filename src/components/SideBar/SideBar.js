@@ -7,6 +7,10 @@ class SideBar extends React.Component {
     labels: ["", "", "", "", "", false],
   };
 
+  viewHandler = () =>{
+
+  }
+
   widthHandler = () => {
     let sideBar = document.getElementById("SideBar");
     if (!this.state.labels[5]) {
@@ -35,23 +39,23 @@ class SideBar extends React.Component {
         <a onClick={this.widthHandler}>
           <HamburgerButton />
         </a>
-        <a>
+        <a id='home-view'>
           <i className="fas fa-home"></i>
           {this.state.labels[0]}
         </a>
-        <a>
+        <a id='task-view'>
           <i className="fas fa-tasks"></i>
           {this.state.labels[1]}
         </a>
-        <a>
+        <a id='advice-view'>
           <i className="fas fa-heart"></i>
           {this.state.labels[2]}
         </a>
-        <a>
+        <a id='reminder-view'>
           <i className="fas fa-bell"></i>
           {this.state.labels[3]}
         </a>
-        <a>
+        <a id='streak-view'>
           <i className="fas fa-award"></i>
           {this.state.labels[4]}
         </a>
