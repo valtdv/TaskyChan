@@ -61,6 +61,14 @@ input[type="button"] {
   color: var(--pink);
 }
 
+input[type="submit"]:hover {
+  background-color: var(--darker-pink);
+}
+
+input[type="button"]:hover {
+  color: var(--darker-pink);
+}
+
 textarea:disabled {
   background-color: var(--slightly-less-grey);
 }

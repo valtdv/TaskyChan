@@ -1,0 +1,15 @@
+@import url("../../../App.css");
+
+.AddButton {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  color: var(--lighter-grey);
+  font-size: 30px;
+  background-color: var(--pink);
+}
+
+.AddButton:hover {
+  background-color: var(--darker-pink);
+}
