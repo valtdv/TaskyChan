@@ -1,0 +1,73 @@
+@import url("../../../App.css");
+
+.AddForm {
+  width: 270px;
+  height: 350px;
+  margin-left: 100px;
+  overflow: auto;
+  border-radius: 15px;
+  background-color: var(--grey);
+  padding: 15px;
+}
+
+.NameInput,
+.SaveCancelBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.labelCheck {
+  text-align: left;
+  padding: 5px;
+}
+
+h3 {
+  color: var(--pink);
+}
+
+form label {
+  font-size: 15px;
+}
+
+input[type="text"] {
+  width: 200px;
+  height: 25px;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="button"],
+textarea {
+  border: none;
+  border-radius: 10px;
+}
+
+input[type="submit"],
+input[type="button"] {
+  height: 35px;
+  width: 130px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+input[type="submit"] {
+  background-color: var(--pink);
+  color: var(--lighter-grey);
+}
+
+input[type="button"] {
+  color: var(--pink);
+}
+
+textarea:disabled {
+  background-color: var(--slightly-less-grey);
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 13px;
+}

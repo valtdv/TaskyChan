@@ -4,7 +4,7 @@ import HamburgerButton from "../HamburgerButton/HamburgerButton";
 
 class SideBar extends React.Component {
   state = {
-    labels: ["", "", "", "", "", false],
+    labels: ["", "", "", "", "", {active: false}],
   };
 
   viewHandler = () =>{
@@ -13,7 +13,7 @@ class SideBar extends React.Component {
 
   widthHandler = () => {
     let sideBar = document.getElementById("SideBar");
-    if (!this.state.labels[5]) {
+    if (!this.state.labels[5].active) {
       sideBar.style.width = "175px";
       this.setState({
         labels: [
@@ -22,13 +22,13 @@ class SideBar extends React.Component {
           "  Advices",
           "  Reminders",
           "  Streaks",
-          true,
+          {active: true}
         ],
       });
     } else {
       sideBar.style.width = "50px";
       this.setState({
-        labels: ["", "", "", "", "", false],
+        labels: ["", "", "", "", "", {active: false}],
       });
     }
   };
