@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
       <SideBar />
       <AddForm />
-      <AddButton />
+      {/*<AddButton />*/}
     </div>
   );
 }
