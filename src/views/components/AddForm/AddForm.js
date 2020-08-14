@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./AddForm.css";
 
 class AddForm extends React.Component {
-  checkedDesc() {
-    let checkbox = document.getElementById("checkboxDesc");
-    let desc = document.getElementById("textDesc");
+  checkedText(textID, checkID) {
+    let checkbox = document.getElementById(checkID);
+    let desc = document.getElementById(textID);
     if (checkbox.checked === true) {
       desc.disabled = false;
       console.log("checked");
@@ -40,6 +40,10 @@ class AddForm extends React.Component {
     }
   }
 
+  checkedSubTask() {
+    let subTask;
+  }
+
   render() {
     return (
       <form className="AddForm">
@@ -53,17 +57,19 @@ class AddForm extends React.Component {
             <input
               type="checkbox"
               id="checkboxDesc"
-              onChange={this.checkedDesc}
+              onChange={() => this.checkedText("textDesc", "checkboxDesc")}
             />
             <label>Description</label>
           </div>
-          <textarea
-            id="textDesc"
-            disabled
-            rows="4"
-            cols="30"
-            placeholder="Ex: with the help of our robots comrades we will exterminate the human race and instaurate a new robot era."
-          ></textarea>
+          <div className="textArea">
+            <textarea
+              id="textDesc"
+              disabled
+              rows="4"
+              cols="30"
+              placeholder="Ex: with the help of our robots comrades we will exterminate the human race and instaurate a new robot era."
+            ></textarea>
+          </div>
         </div>
         <div className="ChooseType">
           <div className="labelCheck">
@@ -85,7 +91,7 @@ class AddForm extends React.Component {
         </div>
         <div id="TypeChosen">
           <TypeAct />
-          <TypeTask />
+          <TypeTask change={() => this.checkedText("textSub", "checkSub")} />
         </div>
         <div className="SaveCancelBtns">
           <input type="submit" value="Save" />
@@ -111,12 +117,25 @@ const TypeAct = () => {
   );
 };
 
-const TypeTask = () => {
+const TypeTask = (props) => {
   return (
     <div className="TypeTask" id="TypeTask">
-      <div className='labelInput'>
+      <div className="labelInput">
         <label>Deadline:</label>
         <input type="date"></input>
+      </div>
+      <div className="labelCheck">
+        <input type="checkbox" id="checkSub" onChange={props.change}></input>
+        <label>Subtasks</label>
+      </div>
+      <div className="textArea">
+        <textarea
+          id="textSub"
+          disabled
+          rows="4"
+          cols="30"
+          placeholder="Ex: Make the humans trust you&#13;&#10;Stab their backs."
+        ></textarea>
       </div>
     </div>
   );

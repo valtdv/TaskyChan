@@ -2,7 +2,7 @@
 
 .AddForm {
   width: 310px;
-  height: 370px;
+  height: 450px;
   margin-left: 100px;
   overflow: auto;
   border-radius: 15px;
@@ -10,7 +10,8 @@
   padding: 15px;
 }
 
-.TypeAct, .TypeTask{
+.TypeAct,
+.TypeTask {
   display: none;
 }
 
@@ -22,7 +23,7 @@
   align-items: center;
 }
 
-.labelInput{
+.labelInput {
   padding-bottom: 10px;
   text-align: left;
 }
@@ -30,6 +31,11 @@
 .labelCheck {
   text-align: left;
   padding: 5px;
+}
+
+.textArea,
+.SaveCancelBtns {
+  padding-bottom: 10px;
 }
 
 h3 {
@@ -40,12 +46,13 @@ form label {
   font-size: 15px;
 }
 
-input[type="text"]{
+input[type="text"] {
   width: 200px;
   height: 25px;
 }
 
-input[type="time"], input[type="date"] {
+input[type="time"],
+input[type="date"] {
   width: 180px;
   height: 25px;
 }
