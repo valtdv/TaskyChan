@@ -20,23 +20,23 @@ class AddForm extends React.Component {
     let labelTask = document.getElementById("labelTask");
     let labelAct = document.getElementById("labelAct");
     let typeTask = document.getElementById("TypeTask");
-    let typeAct = document.getElementById('TypeAct')
+    let typeAct = document.getElementById("TypeAct");
 
     if (checkTask.checked === true) {
       checkAct.style.display = "none";
       labelAct.style.display = "none";
-      typeTask.style.display = 'initial';
+      typeTask.style.display = "initial";
     } else if (checkAct.checked === true) {
       checkTask.style.display = "none";
       labelTask.style.display = "none";
-      typeAct.style.display = 'initial';
+      typeAct.style.display = "initial";
     } else {
       checkTask.style.display = "initial";
       labelTask.style.display = "initial";
       checkAct.style.display = "initial";
       labelAct.style.display = "initial";
-      typeAct.style.display = 'none';
-      typeTask.style.display = 'none';
+      typeAct.style.display = "none";
+      typeTask.style.display = "none";
     }
   }
 
@@ -112,7 +112,14 @@ const TypeAct = () => {
 };
 
 const TypeTask = () => {
-  return <div className='TypeTask' id="TypeTask">hola</div>
-}
+  return (
+    <div className="TypeTask" id="TypeTask">
+      <div className='labelInput'>
+        <label>Deadline:</label>
+        <input type="date"></input>
+      </div>
+    </div>
+  );
+};
 
 export default AddForm;

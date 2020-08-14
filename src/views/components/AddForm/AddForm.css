@@ -45,15 +45,12 @@ input[type="text"]{
   height: 25px;
 }
 
-input[type="time"] {
+input[type="time"], input[type="date"] {
   width: 180px;
   height: 25px;
 }
 
-input[type="text"],
-input[type="submit"],
-input[type="button"],
-input[type="time"],
+input,
 textarea {
   border: none;
   border-radius: 10px;
