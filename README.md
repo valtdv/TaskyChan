@@ -1,4 +1,4 @@
-# Tasky-chan! ☑️
+# Tasky-chan! (On development) ☑️
 Meet Tasky-chan! your adorable kohai who will help put your agenda in order
 
 ## Features 📦
