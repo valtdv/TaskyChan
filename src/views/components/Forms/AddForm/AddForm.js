@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./AddForm.css";
 
-class AddForm extends React.Component {
-  checkedText(textID, checkID) {
+class AddForm extends Component {
+  checkedText = (textID, checkID) =>  {
     let checkbox = document.getElementById(checkID);
     let desc = document.getElementById(textID);
     if (checkbox.checked === true) {
@@ -14,7 +14,7 @@ class AddForm extends React.Component {
     }
   }
 
-  checkedType() {
+  checkedType = () => {
     let checkTask = document.getElementById("checkboxTask");
     let checkAct = document.getElementById("checkboxAct");
     let labelTask = document.getElementById("labelTask");

@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import "./RegForm.css";
+import "../Form.css";
 
-class RegForm extends React.Component {
+class RegForm extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <form className="RegForm">

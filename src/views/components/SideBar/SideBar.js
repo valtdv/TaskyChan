@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./SideBar.css";
-import HamburgerButton from "../HamburgerButton/HamburgerButton";
+import HamburgerButton from "../Buttons/HamburgerButton";
 
-class SideBar extends React.Component {
+class SideBar extends Component {
   state = {
     labels: ["", "", "", "", "", {active: false}],
   };

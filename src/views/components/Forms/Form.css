@@ -9,6 +9,15 @@
   padding: 15px;
 }
 
+.LogForm {
+  width: 310px;
+  height: 200px;
+  margin-left: 100px;
+  border-radius: 15px;
+  background-color: var(--grey);
+  padding: 15px;
+}
+
 .labelInput {
   display: flex;
   flex-direction: row;
