@@ -40,17 +40,13 @@ class AddForm extends React.Component {
     }
   }
 
-  checkedSubTask() {
-    let subTask;
-  }
-
   render() {
     return (
       <form className="AddForm">
         <h3>Add task/activity! :)</h3>
         <div className="labelInput">
           <label>Name: </label>
-          <input type="text" placeholder="Ex: Exterminate the human race." />
+          <input type="text" name="nameAT" placeholder="Ex: Exterminate the human race." />
         </div>
         <div className="DescInput">
           <div className="labelCheck">
@@ -67,6 +63,7 @@ class AddForm extends React.Component {
               disabled
               rows="4"
               cols="30"
+              name="description"
               placeholder="Ex: with the help of our robots comrades we will exterminate the human race and instaurate a new robot era."
             ></textarea>
           </div>
@@ -76,6 +73,7 @@ class AddForm extends React.Component {
             <input
               type="checkbox"
               id="checkboxTask"
+              name="task"
               onChange={this.checkedType}
             />{" "}
             <label id="labelTask">Task</label>
@@ -84,6 +82,7 @@ class AddForm extends React.Component {
             <input
               type="checkbox"
               id="checkboxAct"
+              name="act"
               onChange={this.checkedType}
             />{" "}
             <label id="labelAct">Activity</label>
@@ -107,11 +106,11 @@ const TypeAct = () => {
     <div className="TypeAct" id="TypeAct">
       <div className="labelInput">
         <label>Weekday:</label>
-        <input type="text" placeholder="Ex: Monday, Wednesday"></input>
+        <input type="text" name="weekday" placeholder="Ex: Monday, Wednesday"></input>
       </div>
       <div className="labelInput">
         <label>Time (12hrs):</label>
-        <input type="time" placeholder="Ex: 14:45"></input>
+        <input type="time" name="hour" placeholder="Ex: 14:45"></input>
       </div>
     </div>
   );
@@ -122,7 +121,7 @@ const TypeTask = (props) => {
     <div className="TypeTask" id="TypeTask">
       <div className="labelInput">
         <label>Deadline:</label>
-        <input type="date"></input>
+        <input type="date" name="date"></input>
       </div>
       <div className="labelCheck">
         <input type="checkbox" id="checkSub" onChange={props.change}></input>
@@ -134,6 +133,7 @@ const TypeTask = (props) => {
           disabled
           rows="4"
           cols="30"
+          name="subtasks"
           placeholder="Ex: Make the humans trust you&#13;&#10;Stab their backs."
         ></textarea>
       </div>

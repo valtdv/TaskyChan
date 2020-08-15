@@ -17,7 +17,7 @@ img {
   width: 70%;
 }
 
-a {
+nav a {
   cursor: pointer;
   color: var(--lighter-grey);
   padding: 10px 15px;
