@@ -1,0 +1,7 @@
+@import url("../../../App.css");
+
+.Footer {
+  width: 100%;
+  position: fixed;
+  background-color: var(--lighter-grey);
+}
