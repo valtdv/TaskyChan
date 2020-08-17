@@ -1,26 +1,35 @@
 import React, { Component } from "react";
 import "./css/LogReg.css";
 import LogForm from "./components/Forms/LogForm";
+import RegForm from "./components/Forms/RegForm";
 import Footer from "./components/Footer";
 import happy from "./images/Tasky-happy-talking.png";
 import annoyed from "./images/Tasky-annoyed-talking.png";
 
-class Login extends Component {
-  changeView() {
-    alert("Hello! I am an alert box!!");
+class LogReg extends Component {
+  state = { isLogin: true };
+
+  changeView(logIn) {
+    if (!logIn) {
+      this.setState({ isLogin: false });
+    } else {
+      this.setState({ isLogin: true });
+    }
   }
 
   render() {
     document.body.style = "background: #454559";
     return (
-      <div className="Login">
+      <div className="LogReg">
         <h1>Senpai, let me help you!</h1>
         <p className="instruction">To log in fill out the form below</p>
         <div className="main">
           <img src={happy} alt="" />
-          <div id="formContainer">
-            <LogForm click={this.changeView} />
-          </div>
+          {this.state.isLogin ? (
+            <LogForm click={() => this.changeView(false)} />
+          ) : (
+            <RegForm click={() => this.changeView(true)} />
+          )}
           <img src={annoyed} alt="" />
         </div>
         <Footer />
@@ -29,4 +38,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default LogReg;

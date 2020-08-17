@@ -26,7 +26,7 @@ class RegForm extends Component {
         </div>
         <div className="subBtn">
           <input type="submit" value="Register!" />
-          <p>Do you already have an account? <a href="#">Log in!</a></p>
+          <p>Do you already have an account? <a onClick={this.props.click}>Log in!</a></p>
         </div>
       </form>
     );

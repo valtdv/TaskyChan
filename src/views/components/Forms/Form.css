@@ -4,7 +4,7 @@ form {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 .RegForm {
@@ -63,7 +63,6 @@ input {
   border: none;
   border-radius: 10px;
 }
-
 
 input::placeholder {
   font-family: "Roboto", sans-serif;
