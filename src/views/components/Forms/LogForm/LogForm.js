@@ -18,7 +18,7 @@ class LogForm extends Component {
         </div>
         <div className="subBtn">
           <input type="submit" value="Log in!" />
-          <p>You don't have an account? <a href="#">Register!</a></p>
+          <p>You don't have an account? <a onClick={this.props.click}>Register!</a></p>
         </div>
       </form>
     );

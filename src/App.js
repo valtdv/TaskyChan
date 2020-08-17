@@ -1,15 +1,11 @@
 import React from 'react';
 import './App.css';
-import SideBar from './views/components/SideBar';
-import LogForm from './views/components/Forms/LogForm';
-//import AddButton from './views/components/AddButton'
+import Login from './views/Login'
 
 function App() {
   return (
     <div className='App'>
-      <SideBar />
-      <LogForm />
-      {/*<AddButton />*/}
+      <Login />
     </div>
   );
 }

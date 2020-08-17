@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-class TaskAndActivities extends React.Component{
+class Tasks extends Component{
     render(){
         return;
     }
 }
 
-export default TaskAndActivities;
+export default Tasks;

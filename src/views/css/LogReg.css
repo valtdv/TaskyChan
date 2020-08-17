@@ -1,0 +1,20 @@
+@import url("../../App.css");
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1 {
+  color: var(--pink);
+}
+
+.instruction {
+  color: var(--lighter-grey);
+}
+
+img {
+  height: 30%;
+  width: 30%;
+}

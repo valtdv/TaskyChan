@@ -1,7 +1,35 @@
 @import url("../../../App.css");
 
 .Footer {
+  left: 0;
+  bottom: 0;
   width: 100%;
-  position: fixed;
+  height: 190px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: var(--lighter-grey);
+}
+
+.About{
+  padding: 10px 50px;
+  width: 60%;
+}
+
+.Contact, .Follow{
+  padding: 10px 30px;
+  width: 20%;
+}
+
+.About, .Contact, .Follow{
+  text-align: left;
+}
+
+h3{
+  color: var(--pink);
+}
+
+a{
+  color: var(--black);
+  text-decoration: none;
 }
