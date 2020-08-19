@@ -1,0 +1,15 @@
+@import url("../../App.css");
+
+h1 {
+  color: var(--pink);
+  font-size: 35px;
+}
+
+img {
+  height: 25%;
+  width: 25%;
+}
+
+.tasky-img {
+  bottom: 0%;
+}
