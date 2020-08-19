@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import LogReg from './views/LogReg'
+import SideBar from './views/components/SideBar'
 
 function App() {
   return (
     <div className='App'>
-      <LogReg />
+      <SideBar />
     </div>
   );
 }
