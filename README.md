@@ -16,7 +16,10 @@ Some instructions
 Some instructions
 
 ## Made with 🛠️
-* [React.js](https://reactjs.org/) 
+* [React](https://reactjs.org/) 
+* [MongoDB](https://www.mongodb.com/)
+* [Mongoose](https://mongoosejs.com/docs/)
+* [Express](https://expressjs.com/)
 
 ## Wiki 📖
 * [Visit our wiki to learn to use every aspect of Tasky!](https://github.com/valtdv/TaskyChan/wiki)
