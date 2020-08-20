@@ -2,12 +2,17 @@
 
 .Task {
   width: 400px;
-  min-height: 50px;
+  min-height: 60px;
   color: var(--lighter-grey);
   background-color: var(--purple);
   border-radius: 15px;
   text-align: left;
   padding: 0px 10px;
+}
+
+.top-task{
+  display: flex;
+  justify-content: space-between;
 }
 
 .bottom-task {
@@ -20,8 +25,17 @@
   margin: 10px;
 }
 
-.Task h2 {
-  padding-top: 10px;
-  margin-bottom: 0px;
+.Title, .Btns{
+  padding-top:7px;
+}
+
+label{
   font-size: 17px;
+}
+
+button{
+  color: var(--lighter-grey);
+  font-size: 15px;
+  background: none;
+  border: none;
 }

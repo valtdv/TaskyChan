@@ -7,17 +7,22 @@ class Task extends React.Component {
   }
   render() {
     return (
-      <div className="Task">
+      <form className="Task">
         <div className="top-task">
-          <h2>{this.props.title}</h2>
+          <div className="Title">
+            <input type="checkbox" name="finishedTask" />
+            <label>{this.props.title}</label>
+          </div>
+          <div className="Btns">
+            <button><i class="fas fa-edit"></i></button>
+            <button><i class="far fa-trash-alt"></i></button>
+          </div>
         </div>
         <hr />
-        <div className='bottom-task'>
-          <p>
-            {this.props.content}
-          </p>
+        <div className="bottom-task">
+          <p>{this.props.content}</p>
         </div>
-      </div>
+      </form>
     );
   }
 }
