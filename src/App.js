@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
 import SideBar from './views/components/SideBar'
-import Home from "./views/Home"
+import AddForm from './views/components/Forms/AddForm'
 
 function App() {
   return (
     <div className='App'>
       <SideBar />
-      <Home />
     </div>
   );
 }

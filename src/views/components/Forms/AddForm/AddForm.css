@@ -1,18 +1,19 @@
 @import url("../../../../App.css");
 
-.AddForm {
+.Task, .Act {
   width: 310px;
-  height: 450px;
   margin-left: 100px;
-  overflow: auto;
   border-radius: 15px;
   background-color: var(--grey);
   padding: 15px;
 }
 
-.TypeAct,
-.TypeTask {
-  display: none;
+.Task{
+  height: 450px;
+}
+
+.Act{
+  height: 330px;
 }
 
 .labelInput,

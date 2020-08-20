@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import "./AddForm.css";
 
 class AddForm extends Component {
-  checkedText = (textID, checkID) =>  {
+  constructor(props) {
+    super(props);
+  }
+
+  checkedText = (textID, checkID) => {
     let checkbox = document.getElementById(checkID);
     let desc = document.getElementById(textID);
     if (checkbox.checked === true) {
@@ -12,41 +16,19 @@ class AddForm extends Component {
       desc.disabled = true;
       console.log("not checked");
     }
-  }
-
-  checkedType = () => {
-    let checkTask = document.getElementById("checkboxTask");
-    let checkAct = document.getElementById("checkboxAct");
-    let labelTask = document.getElementById("labelTask");
-    let labelAct = document.getElementById("labelAct");
-    let typeTask = document.getElementById("TypeTask");
-    let typeAct = document.getElementById("TypeAct");
-
-    if (checkTask.checked === true) {
-      checkAct.style.display = "none";
-      labelAct.style.display = "none";
-      typeTask.style.display = "initial";
-    } else if (checkAct.checked === true) {
-      checkTask.style.display = "none";
-      labelTask.style.display = "none";
-      typeAct.style.display = "initial";
-    } else {
-      checkTask.style.display = "initial";
-      labelTask.style.display = "initial";
-      checkAct.style.display = "initial";
-      labelAct.style.display = "initial";
-      typeAct.style.display = "none";
-      typeTask.style.display = "none";
-    }
-  }
+  };
 
   render() {
     return (
-      <form className="AddForm">
-        <h3>Add task/activity! :)</h3>
+      <form className={this.props.className}>
+        <h3>Add a new task</h3>
         <div className="labelInput">
           <label>Name: </label>
-          <input type="text" name="nameAT" placeholder="Ex: Exterminate the human race." />
+          <input
+            type="text"
+            name="nameAT"
+            placeholder="Ex: Exterminate the human race."
+          />
         </div>
         <div className="DescInput">
           <div className="labelCheck">
@@ -68,29 +50,12 @@ class AddForm extends Component {
             ></textarea>
           </div>
         </div>
-        <div className="ChooseType">
-          <div className="labelCheck">
-            <input
-              type="checkbox"
-              id="checkboxTask"
-              name="task"
-              onChange={this.checkedType}
-            />{" "}
-            <label id="labelTask">Task</label>
-          </div>
-          <div className="labelCheck">
-            <input
-              type="checkbox"
-              id="checkboxAct"
-              name="act"
-              onChange={this.checkedType}
-            />{" "}
-            <label id="labelAct">Activity</label>
-          </div>
-        </div>
         <div id="TypeChosen">
-          <TypeAct />
-          <TypeTask change={() => this.checkedText("textSub", "checkSub")} />
+          {this.props.Type === "Task" ? (
+            <TypeTask change={() => this.checkedText("textSub", "checkSub")} />
+          ) : (
+            <TypeAct />
+          )}
         </div>
         <div className="SaveCancelBtns">
           <input type="submit" value="Save" />
@@ -106,7 +71,11 @@ const TypeAct = () => {
     <div className="TypeAct" id="TypeAct">
       <div className="labelInput">
         <label>Weekday:</label>
-        <input type="text" name="weekday" placeholder="Ex: Monday, Wednesday"></input>
+        <input
+          type="text"
+          name="weekday"
+          placeholder="Ex: Monday, Wednesday"
+        ></input>
       </div>
       <div className="labelInput">
         <label>Time (12hrs):</label>
@@ -120,8 +89,12 @@ const TypeTask = (props) => {
   return (
     <div className="TypeTask" id="TypeTask">
       <div className="labelInput">
-        <label>Deadline:</label>
+        <label>Deadline date:</label>
         <input type="date" name="date"></input>
+      </div>
+      <div className="labelInput">
+        <label>Time (12hrs):</label>
+        <input type="time" name="hour" placeholder="Ex: 14:45"></input>
       </div>
       <div className="labelCheck">
         <input type="checkbox" id="checkSub" onChange={props.change}></input>
