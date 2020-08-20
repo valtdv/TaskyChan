@@ -3,10 +3,13 @@
 .AddButton {
   height: 60px;
   width: 60px;
+  bottom: 15px;
+  right: 15px;
+  position: fixed;
   border: none;
   border-radius: 50%;
   color: var(--lighter-grey);
-  font-size: 30px;
+  font-size: 25px;
   background-color: var(--pink);
 }
 

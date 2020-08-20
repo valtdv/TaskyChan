@@ -42,3 +42,8 @@ h1, h2, h3{
 a, button, input[type='button'], input[type='submit'] {
   cursor: pointer;
 }
+
+.blur{
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}

@@ -14,8 +14,6 @@ class SideBar extends Component {
     this.widthHandler();
   };
 
-  viewHandler = () => {};
-
   widthHandler = () => {
     let sideBar = document.getElementById("SideBar");
     if (!this.state.active) {
