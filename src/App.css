@@ -1,22 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap");
 
-:root{
+:root {
   --purple: #454559;
-  --pink: #F27798;
+  --pink: #f27798;
   --darker-pink: #ee5b82;
-  --black: #0D0D0D;
-  --lighter-grey: #F5F3ED;
+  --black: #0d0d0d;
+  --lighter-grey: #f5f3ed;
   --slightly-less-grey: #dfdddd;
   --grey: #cccbcb;
   --darker-grey: #9e9a9a;
 }
 
-html, body{
+html,
+body {
   padding: 0%;
   margin: 0%;
   color: var(--black);
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -35,15 +36,23 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--darker-grey);
 }
 
-h1, h2, h3{
-  font-family: 'Noto Sans JP', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-a, button, input[type='button'], input[type='submit'] {
+a,
+button,
+input[type="button"],
+input[type="submit"] {
   cursor: pointer;
 }
 
-.blur{
-  filter: blur(1px);
+.blur {
   -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
 }

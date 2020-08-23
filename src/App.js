@@ -1,14 +1,14 @@
-import React from 'react';
-import './App.css';
-import SideBar from './views/components/SideBar'
-import AddButton from './views/components/Buttons/AddButton'
+import React from "react";
+import "./App.css";
+import SideBar from "./views/components/SideBar";
+import Tasks from "./views/Tasks";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       {/*<Task title="Hacer el taller de compiladores" />*/}
       <SideBar />
-      <AddButton />
+      <Tasks />
     </div>
   );
 }
