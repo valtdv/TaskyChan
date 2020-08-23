@@ -6,7 +6,7 @@ import Tasks from "./views/Tasks";
 function App() {
   return (
     <div className="App">
-      {/*<Task title="Hacer el taller de compiladores" />*/}
+      {/*<Task title="Hacer el taller de compiladores" /> <SideBar />*/}
       <SideBar />
       <Tasks />
     </div>
