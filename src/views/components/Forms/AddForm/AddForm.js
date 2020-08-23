@@ -52,9 +52,9 @@ class AddForm extends Component {
         </div>
         <div id="TypeChosen">
           {this.props.Type === "Task" ? (
-            <TypeTask change={() => this.checkedText("textSub", "checkSub")} />
-          ) : (
             <TypeAct />
+          ) : (
+            <TypeTask change={() => this.checkedText("textSub", "checkSub")} />
           )}
         </div>
         <div className="SaveCancelBtns">
