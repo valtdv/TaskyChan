@@ -18,10 +18,10 @@ class Tasks extends Component {
     return (
       <div className="Tasks">
         <h1>Senpai, remember to finish your tasks! I believe in you!</h1>
-        <AddTask className={this.state.className} id="TaskForm" />
         <Container>
           <Task title="Hacer el taller de compiladores" />
         </Container>
+        <AddTask className={this.state.className} id="TaskForm" />
         <AddButton click={this.showModal.bind(this)} />
       </div>
     );
