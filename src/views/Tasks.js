@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import "./css/GeneralView.css";
+import "./css/Tasks.css"
 import AddButton from "./components/Buttons/AddButton";
 import AddTask from "./components/Forms/AddForm";
 import Container from "./components/Container";
 import Task from "./components/Task";
+import SpeechBubble from "./components/SpeachBubble";
+import annoyed from "./images/Tasky-annoyed-talking.png"
 
 class Tasks extends Component {
   state = { className: "TaskForm Hidden", isShowing: false };
@@ -17,10 +20,16 @@ class Tasks extends Component {
   render() {
     return (
       <div className="Tasks">
-        <h1>Senpai, remember to finish your tasks! I believe in you!</h1>
-        <Container>
-          <Task title="Hacer el taller de compiladores" />
-        </Container>
+        <h1>Tasks</h1>
+        <main>
+          <Container>
+            <Task title="Hacer el taller de compiladores" />
+          </Container>
+          <div className="TaskyBubble">
+            <SpeechBubble text="Senpai, remember to finish your tasks before their deadline. Cheating is not allowed! I wil get mad if you do it! And if you have no task add more! Don't be lazy!" />
+            <img className="TaskyImg" src={annoyed} alt="school girl saying some information" />
+          </div>
+        </main>
         <AddTask className={this.state.className} id="TaskForm" />
         <AddButton click={this.showModal.bind(this)} />
       </div>

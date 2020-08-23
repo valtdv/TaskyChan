@@ -2,10 +2,10 @@
 
 h1 {
   color: var(--pink);
-  font-size: 35px;
+  font-size: 40px;
 }
 
 img {
-  height: 25%;
-  width: 25%;
+  height: 300px;
+  width: 300px;
 }
