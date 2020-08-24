@@ -21,7 +21,7 @@ class Streak extends Component {
         </div>
         <hr />
         <div className="bottom-streak">
-          <p>User, you've been X day/s without doing this habit</p>
+          <p>User, you've been {this.props.days} day/s without doing this habit</p>
           <Progress />
         </div>
       </div>
@@ -31,8 +31,8 @@ class Streak extends Component {
 
 const Progress = () => {
   return (
-    <ol class="progress-bar">
-      <li class="is-active">
+    <ol className="progress-bar">
+      <li className="is-active">
         <span>1 Day</span>
       </li>
       <li>
