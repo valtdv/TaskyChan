@@ -5,11 +5,19 @@ import AddButton from "./components/Buttons/AddButton";
 import AddStreak from "./components/Forms/AddStreak";
 
 class Streaks extends React.Component {
+  state = { className: "AddStreak Hidden", isShowing: false };
+  showModal() {
+    if (this.state.isShowing) {
+      this.setState({ className: "AddStreak Hidden", isShowing: false });
+    } else {
+      this.setState({ className: "AddStreak", isShowing: true });
+    }
+  }
   render() {
     return (
       <div className="Streaks">
-        <AddStreak />
-        <AddButton />
+        <AddStreak className={this.state.className} />
+        <AddButton click={this.showModal.bind(this)} />
       </div>
     );
   }

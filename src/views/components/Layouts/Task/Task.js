@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./Task.css";
+import "../Layouts.css";
 
-class Task extends React.Component {
+class Task extends Component {
   constructor(props) {
     super(props);
   }

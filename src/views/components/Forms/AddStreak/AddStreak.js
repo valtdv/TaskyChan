@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import "../AddForm.css";
 
 class AddStreak extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   checkedBox() {
     let start = document.getElementById("checkStart");
     let stop = document.getElementById("checkStop");
@@ -23,7 +27,7 @@ class AddStreak extends Component {
 
   render() {
     return (
-      <form className="AddStreak">
+      <form className={this.props.className}>
         <h3>Create a new streak</h3>
         <div className="labelInput">
           <label for="name">Name: </label>

@@ -4,7 +4,7 @@ import "./css/Tasks.css"
 import AddButton from "./components/Buttons/AddButton";
 import AddTask from "./components/Forms/AddForm";
 import Container from "./components/Container";
-import Task from "./components/Task";
+import Task from "./components/noseque/Task";
 import SpeechBubble from "./components/SpeachBubble";
 import annoyed from "./images/Tasky-annoyed-talking.png"
 
