@@ -6,6 +6,12 @@ h1 {
 }
 
 img {
-  height: 300px;
-  width: 300px;
+  height: 30%;
+  width: 30%;
+}
+
+.TaskyImg {
+  height: 370px;
+  width: 350px;
+  align-self: end;
 }

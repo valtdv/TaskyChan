@@ -1,23 +1,26 @@
-@import url("../../../../App.css");
+@import url("../../../App.css");
 
-.TaskForm, .ActForm {
+.TaskForm, .ActForm, .AddStreak {
   width: 310px;
   padding: 15px;
   display: block;
-  margin-top: -37%;
   margin-left: auto;
   margin-right: auto;
-  z-index: 999;
+  z-index: 9999;
   border-radius: 15px;
   background-color: var(--grey);
 }
 
 .TaskForm{
-  height: 450px;
+  height: 430px;
 }
 
 .ActForm{
-  height: 330px;
+  height: 310px;
+}
+
+.AddStreak{
+  height: 260px;
 }
 
 .Hidden {
@@ -42,21 +45,35 @@
   padding: 5px;
 }
 
+.SaveCancelBtns{
+  padding-top: 10px;
+}
+
 .textArea,
 .SaveCancelBtns {
   padding-bottom: 10px;
 }
 
-h3 {
-  color: var(--pink);
+.disabled{
+  color: grey;
 }
 
-form label {
+h3 {
+  color: var(--pink);
+  font-size: 20px;
+  margin-top: -5px;
+}
+
+form label, form p {
   font-size: 15px;
 }
 
+form p{
+  text-align: left;
+}
+
 input[type="text"] {
-  width: 200px;
+  width: 250px;
   height: 23px;
 }
 
