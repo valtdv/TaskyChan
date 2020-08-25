@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import autoBind from 'react-autobind';
 import "./css/GeneralView.css";
 import "./components/Forms/AddStreak";
 import Container from "./components/Container";
@@ -8,7 +9,12 @@ import AddStreak from "./components/Forms/AddStreak";
 import SpeechBubble from "./components/SpeachBubble";
 import congrats from "./images/Tasky-congratulations-talking.png"
 
-class Streaks extends React.Component {
+class Streaks extends Component {
+  constructor(props) {
+    super(props);
+    autoBind(this);
+  }
+
   state = {show: false};
 
   showModal(){
@@ -17,7 +23,6 @@ class Streaks extends React.Component {
 
   closeModal(){
     this.setState({ show: false });
-    console.log(this.state.show);
   }
 
   render() {
@@ -37,8 +42,8 @@ class Streaks extends React.Component {
             />
           </div>
         </main>
-        <AddButton click={this.showModal.bind(this)} />
-        <AddStreak show={this.state.show} close={this.closeModal.bind(this)} />
+        <AddButton click={this.showModal} />
+        <AddStreak show={this.state.show} close={this.closeModal} />
       </div>
     );
   }

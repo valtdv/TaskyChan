@@ -1,30 +1,29 @@
 import React, { Component } from "react";
 import "../Layouts.css";
 
-class Task extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <form className="Task">
-        <div className="top-task">
-          <div className="Title">
-            <input type="checkbox" name="finishedTask" />
-            <label>{this.props.title}</label>
-          </div>
-          <div className="Btns">
-            <button><i class="fas fa-edit"></i></button>
-            <button><i class="far fa-trash-alt"></i></button>
-          </div>
+const Task = () => {
+  return (
+    <form className="Task">
+      <div className="top-task">
+        <div className="Title">
+          <input type="checkbox" name="finishedTask" />
+          <label>{this.props.title}</label>
         </div>
-        <hr />
-        <div className="bottom-task">
-          <p>{this.props.content}</p>
+        <div className="Btns">
+          <button>
+            <i class="fas fa-edit"></i>
+          </button>
+          <button>
+            <i class="far fa-trash-alt"></i>
+          </button>
         </div>
-      </form>
-    );
-  }
-}
+      </div>
+      <hr />
+      <div className="bottom-task">
+        <p>{this.props.content}</p>
+      </div>
+    </form>
+  );
+};
 
 export default Task;

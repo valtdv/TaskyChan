@@ -7,7 +7,8 @@ import Streaks from "./views/Streaks";
 function App() {
   return (
     <div className="App">
-      {/*<Task title="Hacer el taller de compiladores" /> <SideBar /> <AddStreak show={false} /> <Tasks />*/}
+      {/*<Task title="Hacer el taller de compiladores" />  <AddStreak show={false} /> <Tasks />*/}
+      <SideBar />
       <Streaks />
     </div>
   );

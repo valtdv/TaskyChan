@@ -19,49 +19,103 @@ class AddForm extends Component {
   };
 
   render() {
+    if (props.show === false) {
+      return (
+        <div className="background display-none">
+          <form className={this.props.className}>
+            <h3>Add a new task</h3>
+            <div className="labelInput">
+              <label>Name: </label>
+              <input
+                type="text"
+                name="nameAT"
+                placeholder="Ex: Exterminate the human race."
+              />
+            </div>
+            <div className="DescInput">
+              <div className="labelCheck">
+                <input
+                  type="checkbox"
+                  id="checkboxDesc"
+                  onChange={() => this.checkedText("textDesc", "checkboxDesc")}
+                />
+                <label>Description</label>
+              </div>
+              <div className="textArea">
+                <textarea
+                  id="textDesc"
+                  disabled
+                  rows="4"
+                  cols="30"
+                  name="description"
+                  placeholder="Ex: with the help of our robots comrades we will exterminate the human race and instaurate a new robot era."
+                ></textarea>
+              </div>
+            </div>
+            <div id="TypeChosen">
+              {this.props.Type === "Task" ? (
+                <TypeAct />
+              ) : (
+                <TypeTask
+                  change={() => this.checkedText("textSub", "checkSub")}
+                />
+              )}
+            </div>
+            <div className="SaveCancelBtns">
+              <input type="submit" value="Save" />
+              <input type="button" value="Cancel" />
+            </div>
+          </form>
+        </div>
+      );
+    }
     return (
-      <form className={this.props.className}>
-        <h3>Add a new task</h3>
-        <div className="labelInput">
-          <label>Name: </label>
-          <input
-            type="text"
-            name="nameAT"
-            placeholder="Ex: Exterminate the human race."
-          />
-        </div>
-        <div className="DescInput">
-          <div className="labelCheck">
+      <div className="background">
+        <form className={this.props.className}>
+          <h3>Add a new task</h3>
+          <div className="labelInput">
+            <label>Name: </label>
             <input
-              type="checkbox"
-              id="checkboxDesc"
-              onChange={() => this.checkedText("textDesc", "checkboxDesc")}
+              type="text"
+              name="nameAT"
+              placeholder="Ex: Exterminate the human race."
             />
-            <label>Description</label>
           </div>
-          <div className="textArea">
-            <textarea
-              id="textDesc"
-              disabled
-              rows="4"
-              cols="30"
-              name="description"
-              placeholder="Ex: with the help of our robots comrades we will exterminate the human race and instaurate a new robot era."
-            ></textarea>
+          <div className="DescInput">
+            <div className="labelCheck">
+              <input
+                type="checkbox"
+                id="checkboxDesc"
+                onChange={() => this.checkedText("textDesc", "checkboxDesc")}
+              />
+              <label>Description</label>
+            </div>
+            <div className="textArea">
+              <textarea
+                id="textDesc"
+                disabled
+                rows="4"
+                cols="30"
+                name="description"
+                placeholder="Ex: with the help of our robots comrades we will exterminate the human race and instaurate a new robot era."
+              ></textarea>
+            </div>
           </div>
-        </div>
-        <div id="TypeChosen">
-          {this.props.Type === "Task" ? (
-            <TypeAct />
-          ) : (
-            <TypeTask change={() => this.checkedText("textSub", "checkSub")} />
-          )}
-        </div>
-        <div className="SaveCancelBtns">
-          <input type="submit" value="Save" />
-          <input type="button" value="Cancel" />
-        </div>
-      </form>
+          <div id="TypeChosen">
+            {this.props.Type === "Task" ? (
+              <TypeAct />
+            ) : (
+              <TypeTask
+                change={() => this.checkedText("textSub", "checkSub")}
+              />
+            )}
+          </div>
+          <div className="SaveCancelBtns">
+            <input type="submit" value="Save" />
+            <input type="button" value="Cancel" />
+          </div>
+        </form>
+      </div>
     );
   }
 }

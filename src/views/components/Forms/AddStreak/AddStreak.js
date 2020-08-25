@@ -103,7 +103,7 @@ const AddStreak = (props) => {
         </div>
         <div className="SaveCancelBtns">
           <input type="submit" value="Save" />
-          <input type="button" value="Cancel" />
+          <input onClick={props.close} type="button" value="Cancel" />
         </div>
       </form>
     </div>
