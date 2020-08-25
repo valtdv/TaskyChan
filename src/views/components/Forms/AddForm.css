@@ -9,9 +9,14 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: -40%;
-  z-index: 9999;
   border-radius: 15px;
   background-color: var(--grey);
+}
+
+.TaskForm > *,
+.ActForm > *,
+.AddStreak > *{
+  z-index: inherit;
 }
 
 .TaskForm {

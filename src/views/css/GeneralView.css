@@ -10,6 +10,11 @@
   display: grid;
 }
 
+.main-home {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
   color: var(--pink);
   font-size: 40px;
@@ -24,9 +29,4 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.main-home {
-  margin-left: auto;
-  margin-right: auto;
 }

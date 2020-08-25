@@ -45,7 +45,7 @@ label {
 }
 
 hr{
-  color: var(--lighter-grey);
+  border: 1px solid var(--lighter-grey);
 }
 
 button {

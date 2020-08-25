@@ -26,16 +26,16 @@ class Streaks extends React.Component {
             <Streak title="Dejar de comerme las uñas" days="1" />
           </Container>
           <div className="TaskyBubble">
-            <SpeechBubble text="Senpai, you're really brave for starting or leaving habits! I'm really proud of you! Keep going!" />
+            <SpeechBubble text="Senpai, you're really brave for starting or leaving this habits! I'm really proud of you! Keep going! I'll help you the best I can" />
             <img
               className="TaskyImg"
               src={congrats}
-              alt="school girl saying some information"
+              alt="A very happy anime schoolgirl giving some instructions."
             />
           </div>
         </main>
-        <AddStreak className={this.state.className} />
         <AddButton click={this.showModal.bind(this)} />
+        <AddStreak className={this.state.className} />
       </div>
     );
   }

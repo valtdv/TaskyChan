@@ -27,7 +27,7 @@ class Tasks extends Component {
           </Container>
           <div className="TaskyBubble">
             <SpeechBubble text="Senpai, remember to finish your tasks before their deadline. Cheating is not allowed! I wil get mad if you do it! And if you have no task add more! Don't be lazy!" />
-            <img className="TaskyImg" src={annoyed} alt="school girl saying some information" />
+            <img className="TaskyImg" src={annoyed} alt="An annoyed anime school girl giving some instructions" />
           </div>
         </main>
         <AddTask className={this.state.className} id="TaskForm" />
