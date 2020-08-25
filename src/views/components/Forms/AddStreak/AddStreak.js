@@ -1,12 +1,8 @@
 import React, { Component } from "react";
 import "../AddForm.css";
 
-class AddStreak extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  checkedBox() {
+const AddStreak = (close, show) => {
+  const checkedBox = () => {
     let start = document.getElementById("checkStart");
     let stop = document.getElementById("checkStop");
     let startLabel = document.getElementById("labelStart");
@@ -23,11 +19,13 @@ class AddStreak extends Component {
       startLabel.classList.remove("disabled");
       stopLabel.classList.remove("disabled");
     }
-  }
+  };
 
-  render() {
-    return (
-      <form className={this.props.className}>
+  const clss = show ? "background display-block" : "background display-none";
+
+  return (
+    <div className={clss}>
+      <form className="AddStreak">
         <h3>Create a new streak</h3>
         <div className="labelInput">
           <label for="name">Name: </label>
@@ -43,7 +41,7 @@ class AddStreak extends Component {
             type="checkbox"
             id="checkStart"
             name="checkStart"
-            onChange={this.checkedBox}
+            onChange={checkedBox}
           />
           <label id="labelStart" for="checkStart">
             Start this habit
@@ -54,7 +52,7 @@ class AddStreak extends Component {
             type="checkbox"
             id="checkStop"
             name="checkStop"
-            onChange={this.checkedBox}
+            onChange={checkedBox}
           />
           <label id="labelStop" for="checkStop">
             Stop this habit
@@ -62,11 +60,11 @@ class AddStreak extends Component {
         </div>
         <div className="SaveCancelBtns">
           <input type="submit" value="Save" />
-          <input type="button" value="Cancel" />
+          <input onClick={close} type="button" value="Cancel" />
         </div>
       </form>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default AddStreak;

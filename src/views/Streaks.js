@@ -9,14 +9,16 @@ import SpeechBubble from "./components/SpeachBubble";
 import congrats from "./images/Tasky-congratulations-talking.png"
 
 class Streaks extends React.Component {
-  state = { className: "AddStreak Hidden", isShowing: false };
-  showModal() {
-    if (this.state.isShowing) {
-      this.setState({ className: "AddStreak Hidden", isShowing: false });
-    } else {
-      this.setState({ className: "AddStreak", isShowing: true });
-    }
+  state = {show: false};
+
+  showModal(){
+    this.setState({ show: true });
   }
+
+  closeModal(){
+    this.setState({ show: false });
+  }
+
   render() {
     return (
       <div className="Streaks">
@@ -35,7 +37,7 @@ class Streaks extends React.Component {
           </div>
         </main>
         <AddButton click={this.showModal.bind(this)} />
-        <AddStreak className={this.state.className} />
+        <AddStreak show={this.state.show} close={this.closeModal.bind} />
       </div>
     );
   }
