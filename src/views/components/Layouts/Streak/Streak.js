@@ -12,10 +12,10 @@ class Streak extends Component {
           </div>
           <div className="Btns">
             <button>
-              <i class="fas fa-edit"></i>
+              <i className="fas fa-edit"></i>
             </button>
             <button>
-              <i class="far fa-trash-alt"></i>
+              <i className="far fa-trash-alt"></i>
             </button>
           </div>
         </div>

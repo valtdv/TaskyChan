@@ -1,6 +1,7 @@
 @import url("../../../App.css");
 
 .background{
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,10 +10,11 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-.TaskForm,
-.ActForm,
-.AddStreak {
+.background .TaskForm,
+.background .ActForm,
+.background .AddStreak {
   position:fixed;
+  display: inherit;
   top:50%;
   left:50%;
   padding: 15px;
@@ -22,20 +24,16 @@
   transform: translate(-50%,-50%);
 }
 
-.TaskForm {
+.background .TaskForm {
   height: 430px;
 }
 
-.ActForm {
+.background .ActForm {
   height: 310px;
 }
 
-.AddStreak {
+.background .AddStreak {
   height: 260px;
-}
-
-.display-block {
-  display: block;
 }
 
 .display-none {

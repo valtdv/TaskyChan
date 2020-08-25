@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../AddForm.css";
 
-const AddStreak = (close, show) => {
+const AddStreak = (props) => {
   const checkedBox = () => {
     let start = document.getElementById("checkStart");
     let stop = document.getElementById("checkStop");
@@ -21,14 +21,57 @@ const AddStreak = (close, show) => {
     }
   };
 
-  const clss = show ? "background display-block" : "background display-none";
-
+  //const clss = show ? "background" : "background display-none";
+  if (props.show === false) {
+    return (
+      <div className="background display-none">
+        <form className="AddStreak">
+          <h3>Create a new streak</h3>
+          <div className="labelInput">
+            <label htmlFor="name">Name: </label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Ex: Train my AI to become stronger"
+            />
+          </div>
+          <p>Do you want to start a new habit or stop an old one?</p>
+          <div className="labelCheck">
+            <input
+              type="checkbox"
+              id="checkStart"
+              name="checkStart"
+              onChange={checkedBox}
+            />
+            <label id="labelStart" htmlFor="checkStart">
+              Start this habit
+            </label>
+          </div>
+          <div className="labelCheck">
+            <input
+              type="checkbox"
+              id="checkStop"
+              name="checkStop"
+              onChange={checkedBox}
+            />
+            <label id="labelStop" htmlFor="checkStop">
+              Stop this habit
+            </label>
+          </div>
+          <div className="SaveCancelBtns">
+            <input type="submit" value="Save" />
+            <input onClick={props.close} type="button" value="Cancel" />
+          </div>
+        </form>
+      </div>
+    );
+  }
   return (
-    <div className={clss}>
+    <div className="background">
       <form className="AddStreak">
         <h3>Create a new streak</h3>
         <div className="labelInput">
-          <label for="name">Name: </label>
+          <label htmlFor="name">Name: </label>
           <input
             type="text"
             name="name"
@@ -43,7 +86,7 @@ const AddStreak = (close, show) => {
             name="checkStart"
             onChange={checkedBox}
           />
-          <label id="labelStart" for="checkStart">
+          <label id="labelStart" htmlFor="checkStart">
             Start this habit
           </label>
         </div>
@@ -54,13 +97,13 @@ const AddStreak = (close, show) => {
             name="checkStop"
             onChange={checkedBox}
           />
-          <label id="labelStop" for="checkStop">
+          <label id="labelStop" htmlFor="checkStop">
             Stop this habit
           </label>
         </div>
         <div className="SaveCancelBtns">
           <input type="submit" value="Save" />
-          <input onClick={close} type="button" value="Cancel" />
+          <input type="button" value="Cancel" />
         </div>
       </form>
     </div>

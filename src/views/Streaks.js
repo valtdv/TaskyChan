@@ -17,6 +17,7 @@ class Streaks extends React.Component {
 
   closeModal(){
     this.setState({ show: false });
+    console.log(this.state.show);
   }
 
   render() {
@@ -37,7 +38,7 @@ class Streaks extends React.Component {
           </div>
         </main>
         <AddButton click={this.showModal.bind(this)} />
-        <AddStreak show={this.state.show} close={this.closeModal.bind} />
+        <AddStreak show={this.state.show} close={this.closeModal.bind(this)} />
       </div>
     );
   }
