@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "../Layouts.css";
 
-const Task = () => {
+const Task = (props) => {
   return (
     <form className="Task">
       <div className="top-task">
         <div className="Title">
           <input type="checkbox" name="finishedTask" />
-          <label>{this.props.title}</label>
+          <label>{props.title}</label>
         </div>
         <div className="Btns">
           <button>
@@ -20,7 +20,7 @@ const Task = () => {
       </div>
       <hr />
       <div className="bottom-task">
-        <p>{this.props.content}</p>
+        <p>{props.content}</p>
       </div>
     </form>
   );

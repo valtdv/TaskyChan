@@ -1,21 +1,27 @@
 import React, { Component } from "react";
+import autoBind from 'react-autobind';
 import "./css/GeneralView.css";
-import "./css/Tasks.css"
 import AddButton from "./components/Buttons/AddButton";
 import AddTask from "./components/Forms/AddForm";
 import Container from "./components/Container";
-import Task from "./components/noseque/Task";
+import Task from "./components/Layouts/Task";
 import SpeechBubble from "./components/SpeachBubble";
 import annoyed from "./images/Tasky-annoyed-talking.png"
 
 class Tasks extends Component {
-  state = { className: "TaskForm Hidden", isShowing: false };
-  showModal() {
-    if (this.state.isShowing) {
-      this.setState({ className: "TaskForm Hidden", isShowing: false });
-    } else {
-      this.setState({ className: "TaskForm", isShowing: true });
-    }
+  constructor(props) {
+    super(props);
+    autoBind(this);
+  }
+
+  state = {show: false};
+
+  showModal(){
+    this.setState({ show: true });
+  }
+
+  closeModal(){
+    this.setState({ show: false });
   }
   render() {
     return (
@@ -30,8 +36,8 @@ class Tasks extends Component {
             <img className="TaskyImg" src={annoyed} alt="An annoyed anime school girl giving some instructions" />
           </div>
         </main>
-        <AddTask className={this.state.className} id="TaskForm" />
-        <AddButton click={this.showModal.bind(this)} />
+        <AddTask className="TaskForm" id="TaskForm" show={this.state.show} close={this.closeModal} />
+        <AddButton click={this.showModal} />
       </div>
     );
   }
