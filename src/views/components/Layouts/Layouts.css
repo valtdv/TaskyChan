@@ -1,17 +1,26 @@
 @import url("../../../App.css");
 
-.Task {
+.Task,
+.Streak {
   width: 400px;
   min-height: 60px;
   color: var(--lighter-grey);
-  background-color: var(--purple);
   border-radius: 15px;
   text-align: left;
   padding: 0px 10px;
   margin: 5px;
 }
 
-.top-task{
+.Task {
+  background-color: var(--purple);
+}
+
+.Streak {
+  background-color: var(--pink);
+  height: 150px;
+}
+
+.top-task, .top-streak {
   display: flex;
   justify-content: space-between;
 }
@@ -21,20 +30,25 @@
   grid-template-columns: auto auto auto;
 }
 
-.bottom-task p{
+.bottom-task p {
   word-wrap: break-word;
   margin: 10px;
 }
 
-.Title, .Btns{
-  padding-top:7px;
+.Title,
+.Btns {
+  padding-top: 7px;
 }
 
-label{
+label {
   font-size: 17px;
 }
 
-button{
+hr{
+  border: 1px solid var(--lighter-grey);
+}
+
+button {
   color: var(--lighter-grey);
   font-size: 15px;
   background: none;

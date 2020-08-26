@@ -1,11 +1,32 @@
 @import url("../../App.css");
 
+.TaskyImg {
+  height: 370px;
+  width: 350px;
+  align-self: end;
+}
+
+.TaskyBubble {
+  display: grid;
+}
+
+.main-home {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
   color: var(--pink);
-  font-size: 35px;
+  font-size: 40px;
 }
 
 img {
-  height: 25%;
-  width: 25%;
+  height: 30%;
+  width: 30%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

@@ -2,11 +2,12 @@
 
 .speech-bubble {
     position: relative;
-    height: 140px;
+    height: 120px;
     width: 250px;
     margin: inherit;
     padding: 10px;
-    border-radius: 10px;
+	border-radius: 10px;
+	text-align: left;
 	background: var(--slightly-less-grey);
 }
 
@@ -19,7 +20,7 @@
 	height: 0;
 	border: 32px solid transparent;
 	border-top-color: var(--slightly-less-grey);
-	border-bottom: 0;
+	border-bottom: 0px;
 	border-left: 0;
 	margin-left: 60px;
 	margin-bottom: -32px;

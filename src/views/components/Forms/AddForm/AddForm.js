@@ -1,12 +1,8 @@
 import React, { Component } from "react";
-import "./AddForm.css";
+import "../AddForm.css";
 
-class AddForm extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  checkedText = (textID, checkID) => {
+const AddForm = (props) => {
+  const checkedText = (textID, checkID) => {
     let checkbox = document.getElementById(checkID);
     let desc = document.getElementById(textID);
     if (checkbox.checked === true) {
@@ -18,9 +14,57 @@ class AddForm extends Component {
     }
   };
 
-  render() {
+  if (props.show === false) {
     return (
-      <form className={this.props.className}>
+      <div className="background display-none">
+        <form className={props.className}>
+          <h3>Add a new task</h3>
+          <div className="labelInput">
+            <label>Name: </label>
+            <input
+              type="text"
+              name="nameAT"
+              placeholder="Ex: Exterminate the human race."
+            />
+          </div>
+          <div className="DescInput">
+            <div className="labelCheck">
+              <input
+                type="checkbox"
+                id="checkboxDesc"
+                onChange={() => checkedText("textDesc", "checkboxDesc")}
+              />
+              <label>Description</label>
+            </div>
+            <div className="textArea">
+              <textarea
+                id="textDesc"
+                disabled
+                rows="4"
+                cols="30"
+                name="description"
+                placeholder="Ex: with the help of our robots comrades we will exterminate the human race and instaurate a new robot era."
+              ></textarea>
+            </div>
+          </div>
+          <div id="TypeChosen">
+            {props.Type === "Task" ? (
+              <TypeAct />
+            ) : (
+              <TypeTask change={() => checkedText("textSub", "checkSub")} />
+            )}
+          </div>
+          <div className="SaveCancelBtns">
+            <input type="submit" value="Save" />
+            <input onClick={props.close} type="button" value="Cancel" />
+          </div>
+        </form>
+      </div>
+    );
+  }
+  return (
+    <div className="background">
+      <form className={props.className}>
         <h3>Add a new task</h3>
         <div className="labelInput">
           <label>Name: </label>
@@ -51,7 +95,7 @@ class AddForm extends Component {
           </div>
         </div>
         <div id="TypeChosen">
-          {this.props.Type === "Task" ? (
+          {props.Type === "Task" ? (
             <TypeAct />
           ) : (
             <TypeTask change={() => this.checkedText("textSub", "checkSub")} />
@@ -59,12 +103,12 @@ class AddForm extends Component {
         </div>
         <div className="SaveCancelBtns">
           <input type="submit" value="Save" />
-          <input type="button" value="Cancel" />
+          <input onClick={props.close} type="button" value="Cancel" />
         </div>
       </form>
-    );
-  }
-}
+    </div>
+  );
+};
 
 const TypeAct = () => {
   return (
