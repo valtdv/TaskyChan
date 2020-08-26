@@ -20,12 +20,13 @@ Some instructions
 * [MongoDB](https://www.mongodb.com/)
 * [Mongoose](https://mongoosejs.com/docs/)
 * [Express](https://expressjs.com/)
+* [Node](https://nodejs.org/)
 
 ## Wiki 📖
 * [Visit our wiki to learn to use every aspect of Tasky!](https://github.com/valtdv/TaskyChan/wiki)
 
 ## Authors ✒️
 * **Valeria Osorio Salcedo** - *Frontend developer* - [valtdv](https://github.com/valtdv)
-* **Victor Manuel Barbosa Gutierrez** - *Backend developer* - [Victormbarbosa](https://github.com/Victormbarbosa)
+* **Victor Manuel Barbosa Gutierrez** - *Backend developer* - [vmbarbosa](https://github.com/vmbarbosa)
 * **Victor Daniel Guevara Hernandez** - *Intellectual creator of this idea* - [dan3143](https://github.com/dan3143)
 * **Sebatian Molano Artuz** - *Intellectual creator of this idea* - [zebastain](https://github.com/zebastain)
