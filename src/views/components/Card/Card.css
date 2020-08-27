@@ -1,5 +1,31 @@
 @import url("../../../App.css");
 
-.Card{
-    margin: 15px;
+.Card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px 0 var(--grey);
+}
+
+.card-left,
+.card-right {
+  height: 100%;
+}
+
+.card-left {
+  float: left;
+  width: 40%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: var(--purple);
+}
+
+.card-right {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--not-white);
 }

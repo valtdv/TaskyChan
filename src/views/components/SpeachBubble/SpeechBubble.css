@@ -1,27 +1,28 @@
 @import url("../../../App.css");
 
 .speech-bubble {
-    position: relative;
-    height: 120px;
-    width: 250px;
-    margin: inherit;
-    padding: 10px;
-	border-radius: 10px;
-	text-align: left;
-	background: var(--slightly-less-grey);
+  position: relative;
+  height: 120px;
+  width: 250px;
+  margin: inherit;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+  background-color: var(--not-white);
+  box-shadow: 10px 10px 15px 1px var(--grey);
 }
 
 .speech-bubble:after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 32px solid transparent;
-	border-top-color: var(--slightly-less-grey);
-	border-bottom: 0px;
-	border-left: 0;
-	margin-left: 60px;
-	margin-bottom: -32px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 32px solid transparent;
+  border-top-color: var(--not-white);
+  border-bottom: 0px;
+  border-left: 0;
+  margin-left: 60px;
+  margin-bottom: -32px;
 }
