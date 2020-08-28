@@ -2,28 +2,67 @@ import React from "react";
 import "./Card.css";
 
 const Card = (props) => {
-  const enableEdition = () => {};
+  const enableEdition = () => {
+    const inputs = document.getElementsByTagName("input");
+    for (let input of inputs) {
+      if (input.id === "Edit") {
+        input.disabled = true;
+      } else {
+        input.disabled = false;
+      }
+    }
+  };
+  const disableEdition = () => {
+    const inputs = document.getElementsByTagName("input");
+    for (let input of inputs) {
+      if (input.id === "Edit") {
+        input.disabled = false;
+      } else {
+        input.disabled = true;
+      }
+    }
+  };
   return (
     <div className="Card">
       <div className="card-left">
         <h2>Senpai's info</h2>
+        <div className="card-img"></div>
         <form className="info">
           <div className="labelInput">
-            <label>Name: </label>
-            <input type="text" disabled />
+            <label htmlFor="name">Name: </label>
+            <input type="text" id="name" name="name" disabled />
           </div>
           <div className="labelInput">
-            <label>E-mail: </label>
-            <input type="text" disabled />
+            <label htmlFor="email">E-mail: </label>
+            <input type="text" id="email" name="email" disabled />
           </div>
           <div className="labelInput">
-            <label>Password: </label>
-            <input type="password" disabled value={props.password} />
+            <label htmlFor="pass">Password: </label>
+            <input
+              type="password"
+              id="pass"
+              name="pass"
+              disabled
+              value={props.password}
+            />
           </div>
           <div className="btns">
-            <input type="button" value="Edit" onClick={enableEdition} />
-            <input type="submit" value="Save" disabled />
-            <input type="button" value="Cancel" disabled />
+            <input
+              type="button"
+              value="Edit"
+              id="Edit"
+              name="Edit"
+              onClick={enableEdition}
+            />
+            <input type="submit" value="Save" id="Save" name="Save" disabled />
+            <input
+              type="button"
+              value="Cancel"
+              id="Cancel"
+              name="Cancel"
+              disabled
+              onClick={disableEdition}
+            />
           </div>
         </form>
       </div>
