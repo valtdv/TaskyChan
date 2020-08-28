@@ -18,6 +18,7 @@
 .card-left {
   float: left;
   width: 40%;
+  padding: 0px 20px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   background-color: var(--purple);
@@ -28,4 +29,35 @@
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: var(--not-white);
+}
+
+.card-left h2,
+.card-left label {
+  color: var(--lighter-grey);
+}
+
+.card-left input[type="submit"],
+.card-left input[type="button"] {
+  height: 35px;
+  width: 115px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.card-left input[type="submit"]:disabled,
+.card-left input[type="button"]:disabled {
+  color: var(--lighter-grey);
+  background-color: var(--darker-grey);
+  cursor: auto;
+}
+
+.card-left .btns {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-right h2 {
+  padding: 20px;
+  color: var(--pink);
 }
