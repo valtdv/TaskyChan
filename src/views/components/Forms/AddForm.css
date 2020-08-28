@@ -1,11 +1,11 @@
 @import url("../../../App.css");
 
-.background{
+.background {
   display: block;
   position: fixed;
   top: 0;
   left: 0;
-  width:100%;
+  width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -13,15 +13,15 @@
 .background .TaskForm,
 .background .ActForm,
 .background .AddStreak {
-  position:fixed;
+  position: fixed;
   display: inherit;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   padding: 15px;
   width: 310px;
   border-radius: 15px;
   background-color: var(--grey);
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .background .TaskForm {
@@ -86,7 +86,8 @@ form p {
   text-align: left;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
   width: 250px;
   height: 23px;
 }
@@ -108,7 +109,7 @@ input[type="button"] {
   height: 35px;
   width: 130px;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 input[type="submit"] {
@@ -117,6 +118,7 @@ input[type="submit"] {
 }
 
 input[type="button"] {
+  background-color: var(--lighter-grey);
   color: var(--pink);
 }
 
@@ -125,9 +127,12 @@ input[type="submit"]:hover {
 }
 
 input[type="button"]:hover {
+  background-color: var(--lighter-grey);
   color: var(--darker-pink);
 }
 
+input[type="text"]:disabled,
+input[type="password"]:disabled,
 textarea:disabled {
   background-color: var(--slightly-less-grey);
 }

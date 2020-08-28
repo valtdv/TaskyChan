@@ -15,7 +15,13 @@
   margin-right: auto;
 }
 
+.main-profile{
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+}
+
 h1 {
+  margin-top: -3px;
   color: var(--pink);
   font-size: 40px;
 }
