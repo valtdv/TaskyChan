@@ -23,6 +23,7 @@ class Tasks extends Component {
   closeModal(){
     this.setState({ show: false });
   }
+  
   render() {
     return (
       <div className="Tasks">

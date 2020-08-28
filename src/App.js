@@ -8,9 +8,9 @@ import Tasks from "./views/Tasks"
 function App() {
   return (
     <div className="App">
-      {/*<Task title="Hacer el taller de compiladores" />  <AddStreak show={false} />  <Streaks />*/}
+      {/*<Task title="Hacer el taller de compiladores" />  <AddStreak show={false} /> <Tasks />  */}
       <SideBar />
-      <Tasks />
+      <Streaks />
     </div>
   );
 }

@@ -26,7 +26,7 @@ class SideBar extends Component {
           "  Advices",
           "  Reminders",
           "  Streaks",
-          "  Facts",
+          "  Profile",
         ],
         active: true,
       });
@@ -54,7 +54,7 @@ class SideBar extends Component {
           {this.state.labels[1]}
         </a>
         <a id="activity-view">
-          <i class="far fa-calendar-check"></i>
+          <i className="far fa-calendar-check"></i>
           {this.state.labels[2]}
         </a>
         <a id="advice-view">
@@ -69,8 +69,8 @@ class SideBar extends Component {
           <i className="fas fa-award"></i>
           {this.state.labels[5]}
         </a>
-        <a id="fact-view">
-          <i class="far fa-lightbulb"></i>
+        <a id="profile-view">
+          <i className="far fa-user"></i>
           {this.state.labels[6]}
         </a>
       </nav>
