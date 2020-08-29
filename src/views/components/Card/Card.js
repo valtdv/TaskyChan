@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css";
+import profile from "../../images/User-Profile.png"
 
 const Card = (props) => {
   const enableEdition = () => {
@@ -26,7 +27,9 @@ const Card = (props) => {
     <div className="Card">
       <div className="card-left">
         <h2>Senpai's info</h2>
-        <div className="card-img"></div>
+        <div className="card-img">
+          <img src={profile} alt="A profile picture" />
+        </div>
         <form className="info">
           <div className="labelInput">
             <label htmlFor="name">Name: </label>
