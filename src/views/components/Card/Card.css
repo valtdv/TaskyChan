@@ -31,9 +31,37 @@
   background-color: var(--not-white);
 }
 
+/*CARD LEFT*/
+
 .card-left h2,
 .card-left label {
   color: var(--white);
+}
+
+.card-left .card-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-left .labelInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.card-left input {
+  border: none;
+  border-radius: 10px;
+}
+
+.card-left input[type="text"],
+.card-left input[type="password"] {
+  width: 250px;
+  height: 23px;
 }
 
 .card-left input[type="submit"],
@@ -44,11 +72,41 @@
   font-size: 15px;
 }
 
+.card-left input[type="submit"] {
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+.card-left input[type="button"] {
+  background-color: var(--white);
+  color: var(--pink);
+}
+
+.card-left input[type="submit"]:hover {
+  background-color: var(--darker-pink);
+}
+
+.card-left input[type="button"]:hover {
+  background-color: var(--white);
+  color: var(--darker-pink);
+}
+
+.card-left input[type="text"]:disabled,
+.card-left input[type="password"]:disabled{
+  background-color: var(--not-grey);
+}
+
 .card-left input[type="submit"]:disabled,
 .card-left input[type="button"]:disabled {
   color: var(--white);
   background-color: var(--darker-grey);
   cursor: auto;
+}
+
+.card-left input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 13px;
 }
 
 .card-left .btns {
@@ -57,13 +115,9 @@
   justify-content: space-around;
 }
 
+/*CARD RIGHT*/
+
 .card-right h2 {
   padding: 20px;
   color: var(--pink);
-}
-
-.card-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
