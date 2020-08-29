@@ -8,7 +8,7 @@ class Profile extends Component {
     return (
       <div className="Profile">
         <h1>Profile</h1>
-        <Card password="hola"></Card>
+        <Card />
       </div>
     );
   }
