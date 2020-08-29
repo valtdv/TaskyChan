@@ -55,12 +55,14 @@ const Card = (props) => {
               onClick={enableEdition}
             />
             <input type="submit" value="Save" id="Save" name="Save" disabled />
+            {/*
+            TODO: ver como hacer que el boton sirva estado disabled en primer lugar
+            */}
             <input
               type="button"
               value="Cancel"
               id="Cancel"
               name="Cancel"
-              disabled
               onClick={disableEdition}
             />
           </div>
