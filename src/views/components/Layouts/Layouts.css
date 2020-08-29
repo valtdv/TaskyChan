@@ -4,7 +4,7 @@
 .Streak {
   width: 400px;
   min-height: 60px;
-  color: var(--lighter-grey);
+  color: var(--white);
   border-radius: 15px;
   text-align: left;
   padding: 0px 10px;
@@ -45,11 +45,11 @@ label {
 }
 
 hr{
-  border: 1px solid var(--lighter-grey);
+  border: 1px solid var(--white);
 }
 
 button {
-  color: var(--lighter-grey);
+  color: var(--white);
   font-size: 15px;
   background: none;
   border: none;

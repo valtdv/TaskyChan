@@ -8,7 +8,7 @@
   position: fixed;
   border: none;
   border-radius: 50%;
-  color: var(--lighter-grey);
+  color: var(--white);
   font-size: 25px;
   background-color: var(--pink);
 }

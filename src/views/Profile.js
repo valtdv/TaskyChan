@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./css/GeneralView.css"
-import "./css/Profile.css"
 import Card from "./components/Card"
 
 class Profile extends Component {

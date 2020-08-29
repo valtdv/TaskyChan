@@ -4,12 +4,12 @@
   --purple: #454559;
   --pink: #f27798;
   --darker-pink: #ee5b82;
-  --black: #0d0d0d;
+  --white: #f5f3ee;
   --not-white: #ebe5e5;
-  --lighter-grey: #f5f3ee;
-  --slightly-less-grey: #dfdddd;
+  --not-grey: #dfdddd;
   --grey: #d6cfcf;
   --darker-grey: #bebbbb;
+  --black: #0d0d0d;
 }
 
 html,

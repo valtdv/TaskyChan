@@ -33,7 +33,7 @@
 
 .card-left h2,
 .card-left label {
-  color: var(--lighter-grey);
+  color: var(--white);
 }
 
 .card-left input[type="submit"],
@@ -46,7 +46,7 @@
 
 .card-left input[type="submit"]:disabled,
 .card-left input[type="button"]:disabled {
-  color: var(--lighter-grey);
+  color: var(--white);
   background-color: var(--darker-grey);
   cursor: auto;
 }
