@@ -80,7 +80,7 @@ input[type="submit"] {
   height: 35px;
   width: 130px;
   background-color: var(--pink);
-  color: var(--lighter-grey);
+  color: var(--white);
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
