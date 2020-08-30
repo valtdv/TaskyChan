@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "../Layouts.css";
 
 const Task = (props) => {
@@ -6,11 +6,11 @@ const Task = (props) => {
     <form className="Task">
       <div className="top-task">
         <div className="Title">
-          <input type="checkbox" name="finishedTask" />
-          <label>{props.title}</label>
+          <input type="checkbox" id="finishedTask" name="finishedTask" onChange={props.onchange} />
+          <label htmlFor="finishedTask">{props.title}</label>
         </div>
         <div className="Btns">
-          <button>
+          <button onClick={props.edit}>
             <i class="fas fa-edit"></i>
           </button>
           <button>

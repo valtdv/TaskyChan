@@ -9,7 +9,7 @@ import Profile from "./views/Profile"
 function App() {
   return (
     <div className="App">
-      {/*<Task title="Hacer el taller de compiladores" />   <Tasks /> <Streaks />*/}
+      {/*<Task title="Hacer el taller de compiladores" /> <Tasks /> <Streaks />*/}
       <SideBar />
       <Profile />
     </div>

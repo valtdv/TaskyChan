@@ -4,6 +4,7 @@ import Card from "./components/Card"
 
 class Profile extends Component {
   render() {
+    document.title = "Tasky chan! | Profile";
     return (
       <div className="Profile">
         <h1>Profile</h1>

@@ -26,6 +26,7 @@ class Streaks extends Component {
   }
 
   render() {
+    document.title = "Tasky chan! | Streaks";
     return (
       <div className="Streaks">
         <h1>Streaks</h1>
