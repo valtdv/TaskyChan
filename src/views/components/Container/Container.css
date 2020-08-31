@@ -8,7 +8,7 @@
   overflow: auto;
   padding: 25px;
   background-color: var(--not-white);
-  box-shadow: 10px 10px 10px 1px var(--grey);
+  box-shadow: 0 15px 30px var(--grey), 0 6px 6px var(--grey);
 }
 
 .Container::-webkit-scrollbar {

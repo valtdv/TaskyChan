@@ -7,7 +7,7 @@
   width: 1000px;
   height: 450px;
   border-radius: 15px;
-  box-shadow: 10px 10px 10px 0 var(--grey);
+  box-shadow: 0 15px 30px var(--grey), 0 6px 6px var(--grey);
 }
 
 .card-left,
@@ -26,8 +26,7 @@
 
 .card-right {
   width: 100%;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
   background-color: var(--not-white);
 }
 
@@ -42,6 +41,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -40px;
   height: 200px;
   width: 200px;
 }
