@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import autoBind from "react-autobind";
 import "./css/GeneralView.css";
-import AddButton from "./components/Buttons/AddButton";
-import AddTask from "./components/Forms/AddForm";
-import Container from "./components/Container";
-import Task from "./components/Layouts/Task";
-import SpeechBubble from "./components/SpeachBubble";
-import annoyed from "./images/Tasky-annoyed-talking.png";
+import AddButton from "../components/Buttons/AddButton";
+import AddTask from "../components/Forms/AddForm";
+import Container from "../components/Container";
+import Task from "../components/Layouts/Task";
+import SpeechBubble from "../components/SpeachBubble";
+import annoyed from "../images/Tasky-annoyed-talking.png";
 
 class Tasks extends Component {
   constructor(props) {

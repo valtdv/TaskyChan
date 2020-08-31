@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./css/GeneralView.css"
 import "./css/LogReg.css";
-import LogForm from "./components/Forms/LogForm";
-import RegForm from "./components/Forms/RegForm";
-import Footer from "./components/Footer";
-import happy from "./images/Tasky-happy-talking.png";
-import annoyed from "./images/Tasky-annoyed-talking.png";
+import LogForm from "../components/Forms/LogForm";
+import RegForm from "../components/Forms/RegForm";
+import Footer from "../components/Footer";
+import happy from "../images/Tasky-happy-talking.png";
+import annoyed from "../images/Tasky-annoyed-talking.png";
 
 class LogReg extends Component {
   state = { isLogin: true, action: 'log in', title: "Log in" };
