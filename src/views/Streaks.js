@@ -17,6 +17,23 @@ class Streaks extends Component {
 
   state = {show: false};
 
+  streakDays = (streakID) => {
+    //TODO: aca tiene que retornar el número de días en que se ha tenido una racha a partir de su ID
+    return 1;
+  }
+
+  editStreak = () => {
+
+  }
+
+  deleteStreak = () => {
+    if (window.confirm("Are you sure you want to delete this Streak?")) {
+      //TODO: aquí debería borrar la tarea y quitarla del conteiner y eliminar 1 al num de tareas en 
+      //progreso
+      console.log("confirmado");
+    }
+  }
+
   showModal(){
     this.setState({ show: true });
   }

@@ -22,13 +22,25 @@ class Tasks extends Component {
       if (window.confirm("Are you sure you want to check this task as finished?")) {
         console.log("confirmado");
         check.checked = false;
-        //TODO: aqui debería entonces borrar la tarea, quitarla del conteiner y sumarle 1 al número
-        //de tareas realizadas
+        //TODO: aqui debería entonces cambiar el estatus a tarea realizada, quitarla del conteiner 
+        //y sumarle 1 al número de tareas realizadas
       } else {
         check.checked = false;
       }
     }
   };
+
+  editTask = () => {
+
+  }
+
+  deleteTask = () => {
+    if (window.confirm("Are you sure you want to delete this task?")) {
+      //TODO: aquí debería borrar la tarea y quitarla del conteiner y eliminar 1 al num de tareas en 
+      //progreso
+      console.log("confirmado");
+    }
+  }
 
   showModal() {
     this.setState({ show: true });
@@ -47,7 +59,7 @@ class Tasks extends Component {
           <Container>
             <Task
               title="Hacer el taller de compiladores"
-              onchange={this.finishedTask}
+              onchange={this.finishedTask} delete={this.deleteTask}
             />
           </Container>
           <div className="TaskyBubble">

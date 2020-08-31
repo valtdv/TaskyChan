@@ -13,7 +13,7 @@ const Task = (props) => {
           <button onClick={props.edit}>
             <i class="fas fa-edit"></i>
           </button>
-          <button>
+          <button onClick={props.delete}>
             <i class="far fa-trash-alt"></i>
           </button>
         </div>
