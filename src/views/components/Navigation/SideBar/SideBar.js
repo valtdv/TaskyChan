@@ -45,31 +45,31 @@ class SideBar extends Component {
         <a onClick={this.iconHandler}>
           <HamburgerButton />
         </a>
-        <a id="home-view">
+        <a href="/Home" id="home-view">
           <i className="fas fa-home"></i>
           {this.state.labels[0]}
         </a>
-        <a id="task-view">
+        <a href="/Tasks" id="task-view">
           <i className="fas fa-tasks"></i>
           {this.state.labels[1]}
         </a>
-        <a id="activity-view">
+        <a href="/Activities" id="activity-view">
           <i className="far fa-calendar-check"></i>
           {this.state.labels[2]}
         </a>
-        <a id="advice-view">
+        <a href="/Advices" id="advice-view">
           <i className="fas fa-heart"></i>
           {this.state.labels[3]}
         </a>
-        <a id="reminder-view">
+        <a href="/Reminders" id="reminder-view">
           <i className="fas fa-bell"></i>
           {this.state.labels[4]}
         </a>
-        <a id="streak-view">
+        <a href="/Streaks" id="streak-view">
           <i className="fas fa-award"></i>
           {this.state.labels[5]}
         </a>
-        <a id="profile-view">
+        <a href="/Profile" id="profile-view">
           <i className="far fa-user"></i>
           {this.state.labels[6]}
         </a>

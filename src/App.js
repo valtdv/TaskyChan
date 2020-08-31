@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import SideBar from "./views/components/SideBar";
+import SideBar from "./views/components/Navigation/SideBar";
 //import AddStreak from "./views/components/Forms/AddStreak"
 //import Streaks from "./views/Streaks";
 //import Tasks from "./views/Tasks"
