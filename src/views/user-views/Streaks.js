@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import autoBind from 'react-autobind';
 import "./css/GeneralView.css";
-import "./components/Forms/AddStreak";
-import Container from "./components/Container";
-import Streak from "./components/Layouts/Streak";
-import AddButton from "./components/Buttons/AddButton";
-import AddStreak from "./components/Forms/AddStreak";
-import SpeechBubble from "./components/SpeachBubble";
-import congrats from "./images/Tasky-congratulations-talking.png"
+import "../components/Forms/AddStreak";
+import Container from "../components/Container";
+import Streak from "../components/Layouts/Streak";
+import AddButton from "../components/Buttons/AddButton";
+import AddStreak from "../components/Forms/AddStreak";
+import SpeechBubble from "../components/SpeachBubble";
+import congrats from "../images/Tasky-congratulations-talking.png"
 
 class Streaks extends Component {
   constructor(props) {

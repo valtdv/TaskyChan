@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import SpeechBubble from "./components/SpeachBubble";
 import "./css/GeneralView.css";
-import happy from "./images/Tasky-happy-talking.png";
-import SpeechBubble from "./components/SpeachBubble";
+import happy from "../images/Tasky-happy-talking.png";
+import SpeechBubble from "../components/SpeachBubble";
 
 class Home extends Component {
   render() {
