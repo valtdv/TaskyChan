@@ -37,6 +37,10 @@
   height: 260px;
 }
 
+.background .AddReminder {
+  height: 160px;
+}
+
 .display-none {
   display: none;
 }

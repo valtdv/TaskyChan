@@ -6,6 +6,7 @@ const AddReminder = (props) => {
     return (
       <div className="background display-none">
         <form className="AddReminder">
+          <h3>Add Reminder</h3>
           <div className="labelInput">
             <label>Name: </label>
             <input type="text" name="nameR" placeholder="Ex: Change my oil" />
@@ -25,6 +26,7 @@ const AddReminder = (props) => {
   return (
     <div className="background">
       <form className="AddReminder">
+        <h3>Add Reminder</h3>
         <div className="labelInput">
           <label>Name: </label>
           <input type="text" name="nameR" placeholder="Ex: Change my oil" />

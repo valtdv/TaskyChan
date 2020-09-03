@@ -21,7 +21,6 @@ const AddStreak = (props) => {
     }
   };
 
-  //const clss = show ? "background" : "background display-none";
   if (props.show === false) {
     return (
       <div className="background display-none">

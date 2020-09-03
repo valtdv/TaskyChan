@@ -96,9 +96,9 @@ const AddForm = (props) => {
         </div>
         <div id="TypeChosen">
           {props.Type === "Task" ? (
-            <TypeAct />
-          ) : (
             <TypeTask change={() => this.checkedText("textSub", "checkSub")} />
+          ) : (
+            <TypeAct />
           )}
         </div>
         <div className="SaveCancelBtns">
