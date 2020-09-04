@@ -31,7 +31,7 @@ class Tasks extends Component {
   };
 
   editTask = () => {
-
+    //TODO: aca debería permitir editar la tarea
   }
 
   deleteTask = () => {
@@ -74,6 +74,7 @@ class Tasks extends Component {
         <AddTask
           className="TaskForm"
           id="TaskForm"
+          Type="Task"
           show={this.state.show}
           close={this.closeModal}
         />

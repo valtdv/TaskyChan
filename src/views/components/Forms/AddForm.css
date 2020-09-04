@@ -12,7 +12,8 @@
 
 .background .TaskForm,
 .background .ActForm,
-.background .AddStreak {
+.background .AddStreak,
+.background .AddReminder {
   position: fixed;
   display: inherit;
   top: 50%;
@@ -34,6 +35,10 @@
 
 .background .AddStreak {
   height: 260px;
+}
+
+.background .AddReminder {
+  height: 160px;
 }
 
 .display-none {
