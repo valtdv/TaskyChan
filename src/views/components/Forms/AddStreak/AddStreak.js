@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "../AddForm.css";
 
 const AddStreak = (props) => {
@@ -21,7 +21,6 @@ const AddStreak = (props) => {
     }
   };
 
-  //const clss = show ? "background" : "background display-none";
   if (props.show === false) {
     return (
       <div className="background display-none">

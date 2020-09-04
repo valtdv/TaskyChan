@@ -1,82 +1,75 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./SideBar.css";
 
-class SideBar extends Component {
-  state = {
-    labels: ["", "", "", "", "", "", ""],
-    active: false,
-  };
+const SideBar = () => {
 
-  iconHandler = () => {
+  const [active, setActive] = useState(false);
+
+  const [labels, setLabels] = useState(["", "", "", "", "", "", ""]);
+
+  const iconHandler = () => {
     let navIcon = document.getElementById("nav-icon");
     navIcon.classList.toggle("open");
-    this.widthHandler();
+    widthHandler();
   };
 
-  widthHandler = () => {
+  const widthHandler = () => {
     let sideBar = document.getElementById("SideBar");
-    if (!this.state.active) {
+    if (!active) {
       sideBar.style.width = "175px";
-      this.setState({
-        labels: [
-          "  Home",
-          "  Tasks",
-          "  Actvities",
-          "  Advices",
-          "  Reminders",
-          "  Streaks",
-          "  Profile",
-        ],
-        active: true,
-      });
+      setActive(true);
+      setLabels([
+        "  Home",
+        "  Tasks",
+        "  Actvities",
+        "  Advices",
+        "  Reminders",
+        "  Streaks",
+        "  Profile",
+      ]);
     } else {
       sideBar.style.width = "50px";
-      this.setState({
-        labels: ["", "", "", "", "", "", ""],
-        active: false,
-      });
+      setActive(false);
+      setLabels(["", "", "", "", "", "", ""]);
     }
   };
-
-  render() {
-    return (
-      <nav className="SideBar" id="SideBar">
-        <a onClick={this.iconHandler}>
-          <HamburgerButton />
-        </a>
-        <Link to="/">
-          <i className="fas fa-home"></i>
-          {this.state.labels[0]}
-        </Link>
-        <Link to="/Tasks">
-          <i className="fas fa-tasks"></i>
-          {this.state.labels[1]}
-        </Link>
-        <Link to="/Activities">
-          <i className="far fa-calendar-check"></i>
-          {this.state.labels[2]}
-        </Link>
-        <Link to="/Advices">
-          <i className="fas fa-heart"></i>
-          {this.state.labels[3]}
-        </Link>
-        <Link to="/Reminders">
-          <i className="fas fa-bell"></i>
-          {this.state.labels[4]}
-        </Link>
-        <Link to="/Streaks">
-          <i className="fas fa-award"></i>
-          {this.state.labels[5]}
-        </Link>
-        <Link to="/Profile">
-          <i className="far fa-user"></i>
-          {this.state.labels[6]}
-        </Link>
-      </nav>
-    );
-  }
-}
+  return (
+    <nav className="SideBar" id="SideBar">
+      <a onClick={iconHandler}>
+        <HamburgerButton />
+      </a>
+      <Link to="/">
+        <i className="fas fa-home"></i>
+        {labels[0]}
+      </Link>
+      <Link to="/Tasks">
+        <i className="fas fa-tasks"></i>
+        {labels[1]}
+      </Link>
+      <Link to="/Activities">
+        <i className="far fa-calendar-check"></i>
+        {labels[2]}
+      </Link>
+      <Link to="/Advices">
+        <i className="fas fa-heart"></i>
+        {labels[3]}
+      </Link>
+      <Link to="/Reminders">
+        <i className="fas fa-bell"></i>
+        {labels[4]}
+      </Link>
+      <Link to="/Streaks">
+        <i className="fas fa-award"></i>
+        {labels[5]}
+      </Link>
+      <Link to="/Profile">
+        <i className="far fa-user"></i>
+        {labels[6]}
+      </Link>
+    </nav>
+  );
+};
 
 const HamburgerButton = () => {
   return (
