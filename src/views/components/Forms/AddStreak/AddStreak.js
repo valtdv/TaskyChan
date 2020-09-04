@@ -1,7 +1,19 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "../AddForm.css";
 
 const AddStreak = (props) => {
+  const [formData, updateFormData] = useState({data: {
+    name: "",
+    type: ""
+  }});
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    //TODO
+    // ... get data form
+    // ... submit to API or something
+  };
+
   const checkedBox = () => {
     let start = document.getElementById("checkStart");
     let stop = document.getElementById("checkStop");
@@ -10,22 +22,23 @@ const AddStreak = (props) => {
     if (start.checked === true) {
       stopLabel.classList.add("disabled");
       stop.disabled = true;
+      updateFormData(formData.data.type = "Start");
     } else if (stop.checked === true) {
       startLabel.classList.add("disabled");
       start.disabled = true;
+      updateFormData(formData.data.type = "Stop");
     } else {
-      start.disabled = false;
-      stop.disabled = false;
+      start.disabled = stop.disabled = false;
       startLabel.classList.remove("disabled");
       stopLabel.classList.remove("disabled");
     }
+    console.log(formData);
   };
 
-  //const clss = show ? "background" : "background display-none";
   if (props.show === false) {
     return (
       <div className="background display-none">
-        <form className="AddStreak">
+        <form className="AddStreak" onSubmit={submitHandler}>
           <h3>Create a new streak</h3>
           <div className="labelInput">
             <label htmlFor="name">Name: </label>
@@ -33,6 +46,7 @@ const AddStreak = (props) => {
               type="text"
               name="name"
               placeholder="Ex: Train my AI to become stronger"
+              onChange={e => updateFormData(formData.data.name = e.target.value)}
             />
           </div>
           <p>Do you want to start a new habit or stop an old one?</p>
@@ -41,6 +55,7 @@ const AddStreak = (props) => {
               type="checkbox"
               id="checkStart"
               name="checkStart"
+              value="Start"
               onChange={checkedBox}
             />
             <label id="labelStart" htmlFor="checkStart">
@@ -52,6 +67,7 @@ const AddStreak = (props) => {
               type="checkbox"
               id="checkStop"
               name="checkStop"
+              value="Stop"
               onChange={checkedBox}
             />
             <label id="labelStop" htmlFor="checkStop">
