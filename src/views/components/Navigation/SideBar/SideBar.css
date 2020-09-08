@@ -17,17 +17,24 @@ img {
   width: 70%;
 }
 
-nav a {
+nav a, nav div {
   cursor: pointer;
   color: var(--white);
-  padding: 10px 15px;
   text-decoration: none;
   font-size: 23px;
   display: block;
   text-align: left;
 }
 
-a:hover {
+nav a {
+  padding: 10px 15px;
+}
+
+nav div {
+  padding: 10px 15px 0;
+}
+
+nav a:hover, nav div:hover {
   background-color: var(--pink);
 }
 

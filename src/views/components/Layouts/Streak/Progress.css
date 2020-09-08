@@ -40,7 +40,7 @@
   height: 8px;
   background-color: var(--pink);
   border-radius: 50%;
-  border: 2px solid var(--lighter-grey);
+  border: 2px solid var(--white);
   position: absolute;
   left: calc(50% - 6px);
   bottom: -7px;

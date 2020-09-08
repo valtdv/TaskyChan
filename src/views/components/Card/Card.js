@@ -28,7 +28,7 @@ const Card = (props) => {
       <div className="card-left">
         <h2>Senpai's info</h2>
         <div className="card-img">
-          <img src={profile} alt="A profile picture" />
+          <img src={profile} alt="" />
         </div>
         <form className="info">
           <div className="labelInput">

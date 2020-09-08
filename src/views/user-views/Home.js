@@ -13,7 +13,7 @@ class Home extends Component {
           <img
             className="TaskyImg"
             src={happy}
-            alt="A picture of an anime highschool girl smiling"
+            alt="Anime highschool girl smiling and giving some random fun fact"
           />
         </div>
       </div>
