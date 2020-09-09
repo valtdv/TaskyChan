@@ -12,7 +12,8 @@ import SideBar from "./components/Navigation/SideBar";
 
 class View extends Component {
   render() {
-    //document.title = "Tasky chan! | Welcome to Tasky chan";
+    //TODO: if (login) muestra lo de abajo, else muestra la landing page cuando ingrese a la
+    //pagina
     return (
       <div>
         <SideBar />
