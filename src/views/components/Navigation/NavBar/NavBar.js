@@ -14,6 +14,9 @@ const NavBar = (props) => {
     <nav className="NavBar" id="NavBar">
       <a href="#">Home</a>
       <a href="#">About us</a>
+      <Link to="/register">
+        Join us
+      </Link>
       <a href="javascript:void(0);" className="icon" onClick={responsiveIcon}>
         <i className="fa fa-bars"></i>
       </a>
