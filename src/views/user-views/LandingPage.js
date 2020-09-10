@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "../components/Navigation/NavBar";
-import Footer from "../components/Footer"
+//import Footer from "../components/Footer"
 
 class LandingPage extends Component {
   render() {
@@ -11,8 +11,10 @@ class LandingPage extends Component {
           <NavBar />
         </header>
         <section id="Home"></section>
-        <section id="About"></section>
-        <Footer />
+        <section id="Why"></section>
+        <section id="How"></section>
+        <section id="Support"></section>
+        {/*<Footer />*/}
       </div>
     );
   }

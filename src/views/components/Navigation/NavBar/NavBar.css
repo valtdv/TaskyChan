@@ -5,6 +5,7 @@
   position: fixed;
   width: 100%;
   background-color: transparent;
+  box-shadow: 0 3px 3px 0 var(--grey);
 }
 
 .NavBar a {

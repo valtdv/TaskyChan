@@ -26,13 +26,13 @@ class LogReg extends Component {
         <h1>Senpai, let me help you!</h1>
         <p className="instruction">To {this.state.action} fill out the form below</p>
         <div className="main">
-          <img src={happy} alt="A picture of an anime highschool girl smiling" />
+          <img src={happy} alt="Anime highschool girl smiling" />
           {this.state.isLogin ? (
             <LogForm click={() => this.changeView(false)} />
           ) : (
             <RegForm click={() => this.changeView(true)} />
           )}
-          <img src={annoyed} alt="A picture of an anime highschool girl with an annoyed face" />
+          <img src={annoyed} alt="Anime highschool girl with an annoyed face" />
         </div>
         <Footer />
       </div>

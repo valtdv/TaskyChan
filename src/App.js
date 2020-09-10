@@ -7,7 +7,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/*<Task title="Hacer el taller de compiladores" /> <Profile /> <Tasks /> <Streaks />*/}
         <View />
       </div>
     </BrowserRouter>

@@ -9,3 +9,24 @@
 .instruction {
   color: var(--white);
 }
+
+.Form-section, .Img-section {
+  width: 50%;
+  height: 100%;
+}
+
+.Form-section {
+  background-color: var(--white);
+}
+
+.Img-section {
+  background-color: var(--purple);
+}
+
+.Form-section.Form-section-register, .Img-section.Img-section-login {
+  float: left;
+}
+
+.Form-section.Form-section-login, .Img-section.Img-section-register {
+  float: right;
+}

@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "../Form.css";
 
 const LogForm = (props) => {
@@ -14,7 +15,7 @@ const LogForm = (props) => {
       </div>
       <div className="subBtn">
         <input type="submit" value="Log in!" />
-        <p>You don't have an account? <a onClick={this.props.click}>Register!</a></p>
+        <p>You don't have an account? <Link to="/register">Register!</Link></p>
       </div>
     </form>
   );

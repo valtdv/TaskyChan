@@ -43,27 +43,27 @@ const SideBar = () => {
         <i className="fas fa-home"></i>
         {labels[0]}
       </Link>
-      <Link to="/Tasks">
+      <Link to="/tasks">
         <i className="fas fa-tasks"></i>
         {labels[1]}
       </Link>
-      <Link to="/Activities">
+      <Link to="/activities">
         <i className="far fa-calendar-check"></i>
         {labels[2]}
       </Link>
-      <Link to="/Advices">
+      <Link to="/advices">
         <i className="fas fa-heart"></i>
         {labels[3]}
       </Link>
-      <Link to="/Reminders">
+      <Link to="/reminders">
         <i className="fas fa-bell"></i>
         {labels[4]}
       </Link>
-      <Link to="/Streaks">
+      <Link to="/streaks">
         <i className="fas fa-award"></i>
         {labels[5]}
       </Link>
-      <Link to="/Profile">
+      <Link to="/profile">
         <i className="far fa-user"></i>
         {labels[6]}
       </Link>

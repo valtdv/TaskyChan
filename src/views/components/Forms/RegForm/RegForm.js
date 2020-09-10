@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "../Form.css";
 
 const RegForm = (props) => {
@@ -22,7 +23,7 @@ const RegForm = (props) => {
       </div>
       <div className="subBtn">
         <input type="submit" value="Register!" />
-        <p>Do you already have an account? <a onClick={props.click}>Log in!</a></p>
+        <p>Do you already have an account? <Link to="/login">Log in!</Link></p>
       </div>
     </form>
   );

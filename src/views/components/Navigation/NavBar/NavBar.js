@@ -2,18 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-const NavBar = (props) => {
+const NavBar = () => {
   const responsiveIcon = () => {
-    let nav = document.getElementById("myTopnav");
+    let nav = document.getElementById("NavBar");
     if (nav.classList.contains("NavBar")) {
+      console.log("contains");
       nav.classList.toggle("responsive");
     }
   };
 
   return (
     <nav className="NavBar" id="NavBar">
-      <a href="#">Home</a>
-      <a href="#">About us</a>
+      <a href="#Home">Home</a>
+      <a href="#Why">Why choose Tasky</a>
+      <a href="#How">How does Tasky work</a>
+      <a href="#Support">Support</a>
       <Link to="/register">
         Join us
       </Link>

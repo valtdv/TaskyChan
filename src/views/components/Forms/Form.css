@@ -20,7 +20,7 @@ form {
 .RegForm,
 .LogForm {
   border-radius: 15px;
-  background-color: var(--grey);
+  background-color: transparent;
   padding: 15px;
 }
 
