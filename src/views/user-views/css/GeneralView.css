@@ -1,8 +1,20 @@
 @import url("../../../App.css");
 
+h1 {
+  margin: 1em;
+  color: var(--pink);
+  font-size: 2.5em;
+}
+
+img {
+  height: 29em;
+  width: 26em;
+  bottom: 0;
+}
+
 .TaskyImg {
-  height: 370px;
-  width: 350px;
+  height: 23.125em;
+  width: 21.875em;
   align-self: end;
 }
 
@@ -13,17 +25,6 @@
 .main-home {
   margin-left: auto;
   margin-right: auto;
-}
-
-h1 {
-  margin-top: -3px;
-  color: var(--pink);
-  font-size: 40px;
-}
-
-img {
-  height: 30%;
-  width: 30%;
 }
 
 main {

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import LandingPage from "./user-views/LandingPage";
-import LogReg from "./user-views/LogReg"
+import Register from "./user-views/Register";
+import Login from "./user-views/Login";
 /*
 import Home from "./user-views/Home"
 import Activities from "./user-views/Activities"
@@ -34,7 +35,8 @@ class View extends Component {
     return (
       <div>
         <Route path="/" exact component={LandingPage} />
-        <Route path="/register" exact component={LogReg} />
+        <Route path="/register" exact component={Register} />
+        <Route path="/login" exact component={Login} />
       </div>
     );
   }
