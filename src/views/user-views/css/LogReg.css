@@ -17,6 +17,10 @@
 
 .Img-section {
   background-color: var(--purple);
+  background-color: #dfdbe5;
+  background-color: #24153b;
+  background-color: #24153b;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ebe5e5' fill-opacity='0.21' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .Img-section h1 {
@@ -31,4 +35,24 @@
 .Form-section.Form-section-login,
 .Img-section.Img-section-register {
   float: left;
+}
+
+@media screen and (max-width: 600px) {
+  .Form-section,
+  .Img-section {
+    float: left;
+    width: 100%;
+  }
+
+  .Form-section h2 {
+    margin-top: 1.5em;
+  }
+
+  .Img-section {
+    height: 50vh;
+  }
+
+  .Img-section img {
+    display: none;
+  }
 }
