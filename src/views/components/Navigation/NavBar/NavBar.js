@@ -14,6 +14,7 @@ const NavBar = () => {
   return (
     <nav className="NavBar" id="NavBar">
       <a href="#Home">Home</a>
+      <a href="#What">What is Tasky</a>
       <a href="#Why">Why choose Tasky</a>
       <a href="#How">How does Tasky work</a>
       <a href="#Support">Support</a>
