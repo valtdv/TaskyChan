@@ -18,6 +18,7 @@ const SideBar = () => {
     let sideBar = document.getElementById("SideBar");
     if (!active) {
       sideBar.style.width = "175px";
+      sideBar.style.borderRight = "1px solid white"; 
       setActive(true);
       setLabels([
         "  Home",
@@ -30,6 +31,7 @@ const SideBar = () => {
       ]);
     } else {
       sideBar.style.width = "50px";
+      sideBar.style.borderRight = "none"; 
       setActive(false);
       setLabels(["", "", "", "", "", "", ""]);
     }

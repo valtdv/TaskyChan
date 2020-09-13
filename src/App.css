@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap");
 
 :root {
-  --purple: #321548;
+  --purple: #441a64;
   --pink: #f27798;
   --darker-pink: #ee5b82;
   --white: #f5f3ee;
@@ -19,6 +19,7 @@ body {
   color: var(--black);
   text-align: center;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {

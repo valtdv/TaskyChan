@@ -79,7 +79,7 @@ const AddForm = (props) => {
             <input
               type="checkbox"
               id="checkboxDesc"
-              onChange={() => this.checkedText("textDesc", "checkboxDesc")}
+              onChange={() => checkedText("textDesc", "checkboxDesc")}
             />
             <label>Description</label>
           </div>
@@ -96,7 +96,7 @@ const AddForm = (props) => {
         </div>
         <div id="TypeChosen">
           {props.Type === "Task" ? (
-            <TypeTask change={() => this.checkedText("textSub", "checkSub")} />
+            <TypeTask change={() => checkedText("textSub", "checkSub")} />
           ) : (
             <TypeAct />
           )}

@@ -10,10 +10,11 @@ class LandingPage extends Component {
         <header>
           <NavBar />
         </header>
-        <section id="Home"></section>
-        <section id="Why"></section>
-        <section id="How"></section>
-        <section id="Support"></section>
+        <section className="Home" id="Home">
+        </section>
+        <section className="Why" id="Why"></section>
+        <section className="How" id="How"></section>
+        <section className="Support" id="Support"></section>
         {/*<Footer />*/}
       </div>
     );

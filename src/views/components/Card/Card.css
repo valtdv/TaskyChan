@@ -6,8 +6,7 @@
   margin-right: auto;
   width: 1000px;
   height: 450px;
-  border-radius: 15px;
-  box-shadow: 0 15px 30px var(--grey), 0 6px 6px var(--grey);
+  box-shadow: 0 15px 30px var(--darker-grey), 0 6px 6px var(--darker-grey);
 }
 
 .card-left,
@@ -19,15 +18,12 @@
   float: left;
   width: 40%;
   padding: 0px 20px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
   background-color: var(--purple);
 }
 
 .card-right {
   width: 100%;
-  border-radius: 15px;
-  background-color: var(--not-white);
+  background-color: var(--white);
 }
 
 /*CARD LEFT*/
@@ -42,8 +38,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -40px;
-  height: 200px;
-  width: 200px;
+  height: 12.5em;
+  width: 12.5em;
 }
 
 .card-left .labelInput {
@@ -57,7 +53,6 @@
 
 .card-left input {
   border: none;
-  border-radius: 10px;
 }
 
 .card-left input[type="text"],

@@ -8,50 +8,44 @@ form {
 }
 
 .RegForm {
-  width: 310px;
-  height: 330px;
+  height: 20.625em;
 }
 
 .LogForm {
-  width: 310px;
-  height: 200px;
+  height: 12.5em;
 }
 
 .RegForm,
 .LogForm {
-  border-radius: 15px;
+  width: 19.375em;
   background-color: transparent;
-  padding: 15px;
+  padding: 1.063em;
 }
 
 .labelInput {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 13px 10px;
+  padding: 0.813em 0.625em;
   text-align: left;
 }
 
 .subBtn {
-  padding-top: 20px;
+  padding-top: 1.25em;
 }
 
 #pass {
-  width: 200px;
-}
-
-input[type="text"] {
-  width: 230px;
+  width: 12.5em;
 }
 
 form label {
-  font-size: 15px;
+  font-size: 1.063em;
 }
 
 form p,
 form a {
   color: var(--black);
-  font-size: 15px;
+  font-size: 1.063em;
 }
 
 form a:hover {
@@ -61,28 +55,33 @@ form a:hover {
 
 input {
   border: none;
-  border-radius: 10px;
 }
 
 input::placeholder {
   font-family: "Roboto", sans-serif;
   font-style: italic;
-  font-size: 13px;
+  font-size: 1.063em;
+}
+
+input[type="text"] {
+  width: 14.375em;
 }
 
 input[type="text"],
 input[type="password"] {
-  margin: 0px 10px;
-  height: 23px;
+  margin: 0 0.625em;
+  height: 1.438em;
+  background-color: transparent;
+  border-bottom: 1px solid var(--black);
 }
 
 input[type="submit"] {
-  height: 35px;
-  width: 130px;
+  height: 2.5em;
+  width: 8.75em;
   background-color: var(--pink);
   color: var(--white);
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 1.063em;
 }
 
 input[type="submit"]:hover {

@@ -5,11 +5,10 @@
   height: 120px;
   width: 250px;
   margin: inherit;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 0.625em;
   text-align: left;
-  background-color: var(--not-white);
-  box-shadow: 10px 10px 15px 1px var(--grey);
+  background-color: var(--white);
+  box-shadow: 0 0.938em 30px var(--darker-grey), 0 0.375em 0.375em var(--darker-grey);
 }
 
 .speech-bubble:after {
@@ -19,10 +18,10 @@
   left: 50%;
   width: 0;
   height: 0;
-  border: 32px solid transparent;
-  border-top-color: var(--not-white);
+  border: 2em solid transparent;
+  border-top-color: var(--white);
   border-bottom: 0px;
   border-left: 0;
   margin-left: 60px;
-  margin-bottom: -32px;
+  margin-bottom: -2em;
 }

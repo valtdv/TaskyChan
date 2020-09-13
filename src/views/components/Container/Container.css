@@ -3,12 +3,10 @@
 .Container {
   width: 450px;
   height: 430px;
-  border: 1px solid var(--not-white);
-  border-radius: 15px;
   overflow: auto;
   padding: 25px;
-  background-color: var(--not-white);
-  box-shadow: 0 15px 30px var(--grey), 0 6px 6px var(--grey);
+  background-color: var(--white);
+  box-shadow: 0 15px 30px var(--darker-grey), 0 6px 6px var(--darker-grey);
 }
 
 .Container::-webkit-scrollbar {
