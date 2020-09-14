@@ -5,6 +5,30 @@ section {
   width: 100%;
 }
 
-.Home {
+.section-left, .section-right {
+  width: 50%;
+  float: left;
+}
 
+.section-right {
+  float: right;
+}
+
+.Home {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Home .title {
+  width: 50%;
+}
+
+.Home h1 {
+  text-align: left;
+}
+
+.Home img {
+  height: 400px;
+  width: 400px;
 }

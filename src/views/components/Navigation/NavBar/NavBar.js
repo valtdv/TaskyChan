@@ -13,17 +13,17 @@ const NavBar = () => {
 
   return (
     <nav className="NavBar" id="NavBar">
-      <a href="#Home">Home</a>
-      <a href="#What">What is Tasky</a>
-      <a href="#Why">Why choose Tasky</a>
-      <a href="#How">How does Tasky work</a>
-      <a href="#Support">Support</a>
-      <Link to="/register">
-        Join us
-      </Link>
-      <a href="javascript:void(0);" className="icon" onClick={responsiveIcon}>
-        <i className="fa fa-bars"></i>
-      </a>
+      <div className="navbar-right">
+        <a href="#Home">Home</a>
+        <a href="#What">What is Tasky</a>
+        <a href="#Why">Why choose Tasky</a>
+        <a href="#How">How does Tasky work</a>
+        <a href="#Support">Support</a>
+        <Link to="/register">Join us</Link>
+        <a href="javascript:void(0);" className="icon" onClick={responsiveIcon}>
+          <i className="fa fa-bars"></i>
+        </a>
+      </div>
     </nav>
   );
 };
