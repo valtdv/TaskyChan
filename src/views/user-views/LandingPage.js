@@ -38,15 +38,15 @@ const Welcome = () => {
 };
 
 const What = () => {
-  return <section className="What" id="What"></section>;
+  return <section className="What" id="What">
+    <h2>What is Tasky-chan?</h2>
+  </section>;
 };
 
 const Why = () => {
-  return <section className="Why" id="Why"></section>;
-};
-
-const How = () => {
-  return <section className="How" id="How"></section>;
+  return <section className="Why" id="Why">
+    <h2>Why choose Tasky-chan</h2>
+  </section>;
 };
 
 const Support = () => {

@@ -15,9 +15,8 @@ const NavBar = () => {
     <nav className="NavBar" id="NavBar">
       <div className="navbar-right">
         <a href="#Home">Home</a>
-        <a href="#What">What is Tasky</a>
-        <a href="#Why">Why choose Tasky</a>
-        <a href="#How">How does Tasky work</a>
+        <a href="#What">What is Tasky-chan</a>
+        <a href="#Why">Why choose Tasky-chan</a>
         <a href="#Support">Support</a>
         <Link to="/register">Join us</Link>
         <a href="javascript:void(0);" className="icon" onClick={responsiveIcon}>
