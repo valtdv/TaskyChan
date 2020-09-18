@@ -14,15 +14,17 @@ const NavBar = () => {
   return (
     <nav className="NavBar" id="NavBar">
       <div className="navbar-right">
-        <a href="#Home">Home</a>
+        <a className="active" href="#Home">
+          Home
+        </a>
         <a href="#What">What is Tasky-chan</a>
         <a href="#Why">Why choose Tasky-chan</a>
         <a href="#Support">Support</a>
         <Link to="/register">Join us</Link>
-        <a href="javascript:void(0);" className="icon" onClick={responsiveIcon}>
-          <i className="fa fa-bars"></i>
-        </a>
       </div>
+      <a href="javascript:void(0);" className="icon" onClick={responsiveIcon}>
+        <i className="fa fa-bars"></i>
+      </a>
     </nav>
   );
 };

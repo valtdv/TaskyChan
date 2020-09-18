@@ -8,7 +8,7 @@
   box-shadow: 0 3px 3px 0 var(--grey);
 }
 
-.NavBar .right {
+.NavBar .navbar-right {
   float: right;
 }
 
@@ -21,8 +21,17 @@
   text-decoration: none;
 }
 
+.NavBar .active {
+  color: var(--pink);
+}
+
 .NavBar a:hover {
   color: var(--white);
+  background-color: var(--purple);
+}
+
+.NavBar .active:hover {
+  color: var(--pink);
   background-color: var(--purple);
 }
 
@@ -53,5 +62,9 @@
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .NavBar .navbar-right {
+    float: left;
   }
 }

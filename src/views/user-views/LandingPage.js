@@ -15,7 +15,6 @@ class LandingPage extends Component {
         <Welcome />
         <What />
         <Why />
-        <How />
         <Support />
         <Footer />
       </div>

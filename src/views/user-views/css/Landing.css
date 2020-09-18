@@ -32,3 +32,18 @@ section {
   height: 400px;
   width: 400px;
 }
+
+@media screen and (max-width: 600px){
+  section {
+    height: 100%;
+  }
+  
+  .Home {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .Home .title {
+    width: 100%;
+  }
+}
