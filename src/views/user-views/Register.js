@@ -14,7 +14,7 @@ class Register extends Component {
         </section>
         <section className="Form-section Form-section-register">
           <h2>Create an account</h2>
-          <RegForm />
+            <RegForm />
         </section>
       </div>
     );
