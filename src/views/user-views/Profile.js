@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./css/GeneralView.css"
-import Card from "../components/Card"
+import Card from "../components/Cards/ProfileCard"
 
 class Profile extends Component {
   render() {

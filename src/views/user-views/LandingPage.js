@@ -40,6 +40,7 @@ const What = () => {
   return (
     <section className="What" id="What">
       <h2>What is Tasky-chan?</h2>
+      <p></p>
     </section>
   );
 };

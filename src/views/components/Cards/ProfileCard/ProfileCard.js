@@ -1,8 +1,8 @@
 import React from "react";
-import "./Card.css";
+import "./ProfileCard.css";
 import profile from "../../images/User-Profile.png"
 
-const Card = (props) => {
+const ProfileCard = (props) => {
   const enableEdition = () => {
     const inputs = document.getElementsByTagName("input");
     for (let input of inputs) {
@@ -24,10 +24,10 @@ const Card = (props) => {
     }
   };
   return (
-    <div className="Card">
-      <div className="card-left">
+    <div className="profile-card">
+      <div className="profile-card-left">
         <h2>Senpai's info</h2>
-        <div className="card-img">
+        <div className="profile-card-img">
           <img src={profile} alt="" />
         </div>
         <form className="info">
@@ -71,11 +71,11 @@ const Card = (props) => {
           </div>
         </form>
       </div>
-      <div className="card-right">
+      <div className="profile-card-right">
         <h2>Senpai's records</h2>
       </div>
     </div>
   );
 };
 
-export default Card;
+export default ProfileCardimg;

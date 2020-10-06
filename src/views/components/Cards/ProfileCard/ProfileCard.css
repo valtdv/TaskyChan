@@ -1,6 +1,6 @@
 @import url("../../../App.css");
 
-.Card {
+.profile-card {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -10,31 +10,31 @@
   box-shadow: 0 15px 30px var(--darker-grey), 0 6px 6px var(--darker-grey);
 }
 
-.card-left,
-.card-right {
+.profile-card-left,
+.profile-card-right {
   height: 100%;
 }
 
-.card-left {
+.profile-card-left {
   float: left;
   width: 40%;
   padding: 0px 20px;
   background-color: var(--purple);
 }
 
-.card-right {
+.profile-card-right {
   width: 100%;
   background-color: var(--white);
 }
 
 /*CARD LEFT*/
 
-.card-left h2,
-.card-left label {
+.profile-card-left h2,
+.profile-card-left label {
   color: var(--white);
 }
 
-.card-left .card-img {
+.profile-card-left .profile-card-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -43,7 +43,7 @@
   width: 12.5em;
 }
 
-.card-left .labelInput {
+.profile-card-left .labelInput {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -52,62 +52,62 @@
   text-align: left;
 }
 
-.card-left input {
+.profile-card-left input {
   border: none;
 }
 
-.card-left input[type="text"],
-.card-left input[type="password"] {
+.profile-card-left input[type="text"],
+.profile-card-left input[type="password"] {
   width: 250px;
   height: 23px;
 }
 
-.card-left input[type="submit"],
-.card-left input[type="button"] {
+.profile-card-left input[type="submit"],
+.profile-card-left input[type="button"] {
   height: 35px;
   width: 115px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
 
-.card-left input[type="submit"] {
+.profile-card-left input[type="submit"] {
   background-color: var(--pink);
   color: var(--white);
 }
 
-.card-left input[type="button"] {
+.profile-card-left input[type="button"] {
   background-color: var(--white);
   color: var(--pink);
 }
 
-.card-left input[type="submit"]:hover {
+.profile-card-left input[type="submit"]:hover {
   background-color: var(--darker-pink);
 }
 
-.card-left input[type="button"]:hover {
+.profile-card-left input[type="button"]:hover {
   background-color: var(--white);
   color: var(--darker-pink);
 }
 
-.card-left input[type="text"]:disabled,
-.card-left input[type="password"]:disabled{
+.profile-card-left input[type="text"]:disabled,
+.profile-card-left input[type="password"]:disabled{
   background-color: var(--not-grey);
 }
 
-.card-left input[type="submit"]:disabled,
-.card-left input[type="button"]:disabled {
+.profile-card-left input[type="submit"]:disabled,
+.profile-card-left input[type="button"]:disabled {
   color: var(--white);
   background-color: var(--darker-grey);
   cursor: auto;
 }
 
-.card-left input::placeholder {
+.profile-card-left input::placeholder {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   font-size: 13px;
 }
 
-.card-left .btns {
+.profile-card-left .btns {
   margin: 10px;
   display: flex;
   justify-content: space-around;
@@ -115,7 +115,7 @@
 
 /*CARD RIGHT*/
 
-.card-right h2 {
+.profile-card-right h2 {
   padding: 20px;
   color: var(--pink);
 }
