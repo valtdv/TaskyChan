@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import NavBar from "../components/Navigation/NavBar";
 import "./css/Landing.css";
+//COMPONENTS
 import logo from "../images/taskylogo.png";
+
 import Footer from "../components/Footer";
 
 class LandingPage extends Component {

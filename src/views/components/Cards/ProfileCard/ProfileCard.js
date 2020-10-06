@@ -78,4 +78,4 @@ const ProfileCard = (props) => {
   );
 };
 
-export default ProfileCardimg;
+export default ProfileCard;
