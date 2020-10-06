@@ -29,21 +29,31 @@ section {
 }
 
 .Home img {
-  height: 400px;
-  width: 400px;
+  height: 25em;
+  width:25em;
 }
 
 @media screen and (max-width: 600px){
   section {
     height: 100%;
   }
-  
+
   .Home {
     justify-content: center;
     flex-direction: column;
   }
 
   .Home .title {
+    margin-top: 10%;
     width: 100%;
+  }
+
+  .Home h1 {
+    font-size: 2em;
+  }
+
+  .Home img {
+    height: 18.75em;
+    width: 18.75em;
   }
 }

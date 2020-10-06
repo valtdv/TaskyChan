@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NavBar from "../components/Navigation/NavBar";
 import "./css/Landing.css";
 import logo from "../images/taskylogo.png";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 
 class LandingPage extends Component {
   render() {
@@ -37,15 +37,20 @@ const Welcome = () => {
 };
 
 const What = () => {
-  return <section className="What" id="What">
-    <h2>What is Tasky-chan?</h2>
-  </section>;
+  return (
+    <section className="What" id="What">
+      <h2>What is Tasky-chan?</h2>
+    </section>
+  );
 };
 
 const Why = () => {
-  return <section className="Why" id="Why">
-    <h2>Why choose Tasky-chan</h2>
-  </section>;
+  return (
+    <section className="Why" id="Why">
+      <h2>Why choose Tasky-chan</h2>
+      <p></p>
+    </section>
+  );
 };
 
 const Support = () => {
