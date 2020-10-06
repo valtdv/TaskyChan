@@ -3,7 +3,7 @@ import NavBar from "../components/Navigation/NavBar";
 import "./css/Landing.css";
 //COMPONENTS
 import logo from "../images/taskylogo.png";
-
+import Card from "../components/Cards/SquareCard"
 import Footer from "../components/Footer";
 
 class LandingPage extends Component {
@@ -51,7 +51,6 @@ const Why = () => {
   return (
     <section className="Why" id="Why">
       <h2>Why choose Tasky-chan</h2>
-      <p></p>
     </section>
   );
 };
