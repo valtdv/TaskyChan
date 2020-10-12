@@ -3,7 +3,8 @@ import NavBar from "../components/Navigation/NavBar";
 import "./css/Landing.css";
 //COMPONENTS
 import logo from "../images/taskylogo.png";
-import Card from "../components/Cards/SquareCard"
+import Card from "../components/Cards/SquareCard";
+import SupportForm from "../components/Forms/SupportForm";
 import Footer from "../components/Footer";
 
 class LandingPage extends Component {
@@ -51,12 +52,26 @@ const Why = () => {
   return (
     <section className="Why" id="Why">
       <h2>Why choose Tasky-chan</h2>
+      <div className="CardContainer">
+        <Card title="" content="" />
+        <Card title="" content="" />
+        <Card title="" content="" />
+      </div>
     </section>
   );
 };
 
 const Support = () => {
-  return <section className="Support" id="Support"></section>;
+  return (
+    <section className="Support" id="Support">
+      <h2>Need help?</h2>
+      <p>
+        If you have any doubts or problems with our product don't be shy and
+        fill this form with any questions you may have.
+      </p>
+      <SupportForm />
+    </section>
+  );
 };
 
 export default LandingPage;

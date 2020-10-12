@@ -1,1 +1,10 @@
 @import url("../../../../App.css");
+
+.SquareCard {
+  height: 18.75em;
+  width: 18.75em;
+}
+
+.SquareCard h3 {
+  text-align: center;
+}

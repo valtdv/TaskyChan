@@ -3,9 +3,9 @@ import "./SquareCard.css";
 
 const SquareCard = (props) => {
   return (
-    <div className="square-card">
-      <h3></h3>
-      <p></p>
+    <div className="SquareCard">
+      <h3>{props.title}</h3>
+      <p>{props.content}</p>
     </div>
   );
 };
